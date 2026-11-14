@@ -1,0 +1,15 @@
+{
+  "description": "SHA-256 of the nine inherited files before publication edits; preserved in the initial Git commit.",
+  "checkpoint_date": "2026-11-13",
+  "files": {
+    "NEW_CHAT_HANDOFF.md": "9fd0118005f38fc2d26405cd4b260de12ce68411def6e5e6c0a5abdf1becd6cf",
+    "README.md": "c9a1829f3e64720ba85d0d033b0123a5c5941d6d362d7a7c5eee4b84000ffda8",
+    "research-context.md": "d37a6ec76b2c10ec68a4d4e3df89fae51483bdb236de138f5efefe7dc43604f8",
+    "mixed-horizon.md": "9b4bbf9072ab4aa1ed97389e8957df517e95dc7823e2c0ce02088a33dfc9b95e",
+    "requirements.txt": "62a66612eba47ab2843e8c22844ee6ab9e64b1a2af5c31975d56443c14d6b1ac",
+    "verify_baseline.py": "d9699678c49cbf44295a86053b01807a641b6b7c2438fb4d8f2dc864eac0f187",
+    "verify_mixed_horizon.py": "53da25cd7cb34e392036dfa47a15df8116d14061d577d51029a5136eef0e6f09",
+    "results/baseline.json": "8fe8293160a2d018ccdd76aa8813c3b5ea1246b8adc66c4e57d53ef72783579b",
+    "results/mixed-horizon.json": "fd325a3bea089075592bbf62e3efc1b11a822644ae6cc783bf67a5d9a7f76c6a"
+  }
+}

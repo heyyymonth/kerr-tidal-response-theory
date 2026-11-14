@@ -1,0 +1,179 @@
+{
+  "evidence_level": "exact symbolic consistency checks; no tidal-response coefficient computed",
+  "sympy_version": "1.11.1",
+  "script_sha256": "d9699678c49cbf44295a86053b01807a641b6b7c2438fb4d8f2dc864eac0f187",
+  "checks_passed": 32,
+  "checks": [
+    {
+      "name": "Schwarzschild satisfies normalized Ernst equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Printed Eq. 2.11 has nonzero Schwarzschild residual",
+      "expected": "(4*x - 4)/(x + 1)**3",
+      "status": "verified"
+    },
+    {
+      "name": "Kerr satisfies normalized Ernst equation for p^2-q^2=1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Kerr reduces to Schwarzschild",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Holomorphic example is flat-2D harmonic",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Same example is not axisymmetric-3D harmonic",
+      "expected": "2",
+      "status": "verified"
+    },
+    {
+      "name": "Static Weyl reduction",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "P_0 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Q_0 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "P_0 regular value at horizon",
+      "expected": "1",
+      "status": "verified"
+    },
+    {
+      "name": "Q_0 logarithmic derivative at horizon",
+      "expected": "-1/2",
+      "status": "verified"
+    },
+    {
+      "name": "P_1 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Q_1 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "P_1 regular value at horizon",
+      "expected": "1",
+      "status": "verified"
+    },
+    {
+      "name": "Q_1 logarithmic derivative at horizon",
+      "expected": "-1/2",
+      "status": "verified"
+    },
+    {
+      "name": "P_2 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Q_2 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "P_2 regular value at horizon",
+      "expected": "1",
+      "status": "verified"
+    },
+    {
+      "name": "Q_2 logarithmic derivative at horizon",
+      "expected": "-1/2",
+      "status": "verified"
+    },
+    {
+      "name": "P_3 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Q_3 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "P_3 regular value at horizon",
+      "expected": "1",
+      "status": "verified"
+    },
+    {
+      "name": "Q_3 logarithmic derivative at horizon",
+      "expected": "-1/2",
+      "status": "verified"
+    },
+    {
+      "name": "P_4 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Q_4 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "P_4 regular value at horizon",
+      "expected": "1",
+      "status": "verified"
+    },
+    {
+      "name": "Q_4 logarithmic derivative at horizon",
+      "expected": "-1/2",
+      "status": "verified"
+    },
+    {
+      "name": "Q_2 decays at infinity",
+      "expected": "2/15",
+      "status": "verified"
+    },
+    {
+      "name": "First variation of Ernst equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Second variation with no factorial convention",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Mixed second variation of Ernst equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Quadrupole-hexadecapole angular product",
+      "expected": "0",
+      "status": "verified"
+    }
+  ],
+  "diagnostics": {
+    "printed_ernst_schwarzschild_residual": "4*(x - 1)/(x + 1)**3",
+    "kerr_residual_before_constraint": "-4*p*(-I*q*y + x)*(p**2 - q**2 - 1)/((p - I*q*y + x)*(p + I*q*y + x)**3)",
+    "holomorphic_axisymmetric_residual": "2"
+  },
+  "not_established": [
+    "The published quadrupolar Kretschmann calculation has not been reproduced.",
+    "No all-multipole nonlinear Kerr Love theorem or physical counterexample is proved.",
+    "The mixed-field boundary-value problem and effective-field-theory matching are unsolved.",
+    "Finite Legendre checks do not replace the general analytic boundary argument."
+  ]
+}

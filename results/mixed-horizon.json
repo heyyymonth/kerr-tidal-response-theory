@@ -1,0 +1,108 @@
+{
+  "evidence_level": "exact stationary frame identities and static mixed-field limits; conditional rotating asymptotic argument is in the accompanying note",
+  "sympy_version": "1.11.1",
+  "script_sha256": "53da25cd7cb34e392036dfa47a15df8116d14061d577d51029a5136eef0e6f09",
+  "checks_passed": 18,
+  "vacuum_ricci_components_checked": 16,
+  "checks": [
+    {
+      "name": "Independent frame contraction gives static electric-Weyl formula",
+      "expected": "8*(-v**2 + v/r)**2 + 8*(-r*v**3 + 2*v**2 + vr)**2 + 8*(r*v**3 - v**2 - vr - v/r)**2",
+      "status": "verified"
+    },
+    {
+      "name": "Reduced curvature vanishes in flat space",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Exact mixed static equatorial gamma equation",
+      "expected": "r*(-c*r + 3*d/(2*r**4) + 1/(r*sqrt(r**2 + 1)))**2",
+      "status": "verified"
+    },
+    {
+      "name": "Full Schwarzschild Kretschmann scalar",
+      "expected": "48/(sqrt(r**2 + 1) + 1)**6",
+      "status": "verified"
+    },
+    {
+      "name": "Rotating Kerr equatorial curvature at rho=4/3, alpha=1/3",
+      "expected": "8957952/73530625",
+      "status": "verified"
+    },
+    {
+      "name": "Rotating Kerr equatorial curvature at rho=12/5, alpha=1/3",
+      "expected": "4800000000/208422380089",
+      "status": "verified"
+    },
+    {
+      "name": "Static reduced curvature leading coefficient",
+      "expected": "729*d**6/4",
+      "status": "verified"
+    },
+    {
+      "name": "Mixed static metric exponential leading coefficient",
+      "expected": "3*d**2/2",
+      "status": "verified"
+    },
+    {
+      "name": "Finite c cannot change the leading exponential coefficient",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Mixed curvature coefficient is not generally finite",
+      "expected": "-12*d",
+      "status": "verified"
+    },
+    {
+      "name": "Published V sign issue in the pure growing equatorial limit",
+      "expected": "4*c*r/sqrt(r**2 + 1)",
+      "status": "verified"
+    },
+    {
+      "name": "Inverse Schwarzschild seed has same leading reduced curvature",
+      "expected": "729*d**6/4",
+      "status": "verified"
+    },
+    {
+      "name": "Kerr auxiliary amplitude equation",
+      "expected": "(2*c*r - 3*d/r**4)/sqrt(r**2 + 1)",
+      "status": "verified"
+    },
+    {
+      "name": "Equatorial Kerr seed factorization",
+      "expected": "(-k**2*(xx - 1) + xx + 1)*(-k**2*(xx + 1) + xx - 1)",
+      "status": "verified"
+    },
+    {
+      "name": "Small-k Ernst metric ratio",
+      "expected": "(xx - 1)/(xx + 1)",
+      "status": "verified"
+    },
+    {
+      "name": "Large-k Ernst metric ratio",
+      "expected": "(xx + 1)/(xx - 1)",
+      "status": "verified"
+    },
+    {
+      "name": "Compact physical-twist curvature correction",
+      "expected": "-r**2*t**6/4 + t**4*(3*r**2*v**2 - 3*r*v + 3) + t**2*(-12*r**2*v**4 + 24*r*v**3 + 8*r*v*vr - 20*v**2 + 12*vr + 12*v/r) + t*tr*(-2*r*t**2 + 8*r*v**2 - 24*v) - 4*tr**2",
+      "status": "verified"
+    },
+    {
+      "name": "Twist corrections vanish when physical twist and its derivative vanish",
+      "expected": "0",
+      "status": "verified"
+    }
+  ],
+  "reduced_stationary_kretschmann": "-(r**4*t**6 - 12*r**4*t**4*v**2 + 48*r**4*t**2*v**4 - 64*r**4*v**6 + 12*r**3*t**4*v + 8*r**3*t**3*tr - 96*r**3*t**2*v**3 - 32*r**3*t**2*v*vr - 32*r**3*t*tr*v**2 + 192*r**3*v**5 + 128*r**3*v**3*vr - 12*r**2*t**4 + 80*r**2*t**2*v**2 - 48*r**2*t**2*vr + 96*r**2*t*tr*v + 16*r**2*tr**2 - 128*r**2*v**4 - 192*r**2*v**2*vr - 64*r**2*vr**2 - 48*r*t**2*v - 64*r*v*vr - 64*v**2)/(4*r**2)",
+  "reduced_twist_correction": "-(r**3*t**6 - 12*r**3*t**4*v**2 + 48*r**3*t**2*v**4 + 12*r**2*t**4*v + 8*r**2*t**3*tr - 96*r**2*t**2*v**3 - 32*r**2*t**2*v*vr - 32*r**2*t*tr*v**2 - 12*r*t**4 + 80*r*t**2*v**2 - 48*r*t**2*vr + 96*r*t*tr*v + 16*r*tr**2 - 48*t**2*v)/(4*r)",
+  "static_scaled_log_limit": "lim(r->0+) r^6 log(K_dimless) = 3*d^2/2, fixed d != 0 and finite c",
+  "not_established": [
+    "No full mixed Kerr Kretschmann expression or published prefactor is reproduced.",
+    "No global nakedness, event-horizon classification, or completeness of the solution-generating ansatz is proved.",
+    "No uniform d->0, spin->0, or extremal limit is proved.",
+    "No EFT-matched Love coefficient or novel all-multipole theorem is obtained."
+  ]
+}
