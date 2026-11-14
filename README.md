@@ -1,22 +1,60 @@
-# Kerr tidal response: proof reconstruction
+# Kerr Tidal Response Theory
 
-Venkata Hemanth Athota · Working research note · 13 November 2026
+Classical general relativity · Rotating black holes · Nonlinear tidal response
+
+**Contributed by Hemanth.**
+
+Venkata Hemanth Athota · Independent researcher · Working research notes · 13 November 2026
+
+[![Research verification](https://github.com/heyyymonth/kerr-tidal-response-theory/actions/workflows/verify.yml/badge.svg)](https://github.com/heyyymonth/kerr-tidal-response-theory/actions/workflows/verify.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+[Claims and evidence](CLAIMS.md) · [Regularity and matching](docs/regularity-and-matching.md) · [Literature audit](docs/literature-audit.md) · [Provenance](PROVENANCE.md) · [Author and contact](AUTHORS.md)
 
 The question is whether regular rotating black holes must have vanishing independently induced conservative response to stationary, axisymmetric tides beyond linear order. The present work reconstructs the starting equations and audits the closest published argument. It establishes algebraic consistency checks and a conditional horizon-curvature obstruction, not a general nonlinear Kerr Love theorem or a physical counterexample.
 
 For the research question, learning sequence, and reasons earlier approaches do not settle this proof, start with [What we are trying to prove, and how we reached the question](research-context.md).
 
-The [new-chat handoff](NEW_CHAT_HANDOFF.md) preserves the scientific status, repository setup preferences, authorship, and starting instructions for continuing this work in a separate repository.
+The [historical handoff](NEW_CHAT_HANDOFF.md) preserves the starting checkpoint, repository setup preferences, authorship, and original continuation instructions. The inherited files are preserved in Git history; [provenance](PROVENANCE.md) records the subsequent reproduction and publication preparation.
 
 The horizon calculation is recorded in [Mixed quadrupoles: a controlled horizon-curvature limit](mixed-horizon.md). It derives the static mixed-field divergence exactly and reconstructs the leading rotating divergence within a specified reflection-symmetric vacuum family.
+
+## Current status and reproduction
+
+| Established here | Still unresolved |
+|---|---|
+| 32 baseline symbolic checks, 18 curvature checks, and 16 vacuum Ricci-component checks reproduced against the complete saved records. | No independently matched nonlinear Kerr Love coefficient has been computed. |
+| Exact static and conditional rotating local curvature obstruction reconstructed with stated assumptions. | The aligned quadrupole--hexadecapole response at order $\eta_2\eta_4\chi^2$ is a candidate conjecture. |
+| Versioned source audit and portable research-history record. | Response definition, identifiable tensor combination, boundary conditions, matching, and channel-specific novelty require further work. |
+
+Use Python 3.11 and the pinned dependencies:
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m pip check
+.venv/bin/python verify_reproduction.py
+```
+
+The reproduction command reruns both calculations, checks complete saved outputs
+and hashes, and validates local Markdown file links. It does not rewrite expected
+results. [Execution receipt](results/reproduction.json) · [CI workflow](.github/workflows/verify.yml).
+
+The next lesson is [why regularity does not finish the matching problem](docs/regularity-and-matching.md).
 
 ## Evidence and source versions
 
 The audit authority is the **published** paper [1]. It includes mixed growing/decaying quadrupoles after Eq. (5.18); that paragraph is absent from arXiv v1.
 
-The published PDF's SHA-256 is `58d49474ca3438ce77fa3c9dc87002cb930c48710bbccfb246bebb3df65cd1d6`. The University of Geneva copy includes three preliminary pages: printed page 4 is PDF page 7; printed page 15 is PDF page 18. Both pages were visually inspected, rather than relying only on extracted equations. The downloaded reference is kept outside this working directory.
+The published PDF's SHA-256 is `58d49474ca3438ce77fa3c9dc87002cb930c48710bbccfb246bebb3df65cd1d6`, confirmed by a fresh retrieval. The University of Geneva copy includes three preliminary pages: printed page 4 is PDF page 7; printed page 15 is PDF page 18. PDF pages 7, 13, 14, 15 and 18 were visually inspected, rather than relying only on extracted equations. The paper is a temporary working reference and is not distributed in this repository. [Source register](provenance/sources.json).
 
 The 2026 review [2], §6.3.2, identifies all-multipole stationary Kerr response and effective-field-theory matching as unfinished. It is an invited-review **preprint**, not a verified journal publication. This is a literature-supported research opening, not a certification that the particular channel proposed below is unpublished.
+
+The [bounded literature audit](docs/literature-audit.md) also checks the wider
+Schwarzschild symmetry argument of [6], which leaves spinning black holes for
+future work, and records nearby papers screened at abstract level. Gralla [5]
+motivates care in defining response; its historical status statements are not
+treated as current conclusions.
 
 ## 1. Define the boundary-value problem
 
@@ -214,5 +252,19 @@ The [mixed-horizon note](mixed-horizon.md) supplies the conditional rotating asy
 2. M. J. Rodríguez, L. Santoni and A. R. Solomon, *Love numbers of black holes and compact objects*, [arXiv:2604.08653v1](https://arxiv.org/html/2604.08653v1), especially §§2.2.4 and 6.3.2. Invited-review preprint.
 3. O. Combaluzier-Szteinsznaider et al., *Symmetries of vanishing nonlinear Love numbers of Schwarzschild black holes*, [JHEP 03 (2025) 124](https://link.springer.com/article/10.1007/JHEP03%282025%29124).
 4. S. Iteanu et al., *Vanishing of quadratic Love numbers of Schwarzschild black holes*, [JHEP 02 (2025) 174](https://link.springer.com/article/10.1007/JHEP02%282025%29174).
+5. S. E. Gralla, *On the ambiguity in relativistic tidal deformability*, [Class. Quantum Grav. 35 (2018) 085002](https://doi.org/10.1088/1361-6382/aab186); [author version v3](https://arxiv.org/html/1710.11096v3).
+6. J. Parra-Martinez and A. Podo, *Naturalness of vanishing black-hole tides*, [arXiv:2510.20694v2](https://arxiv.org/html/2510.20694v2). Preprint version inspected.
 
-Existing cluster-transport calculations are not evidence for this strong-field theorem. This working note records a separate analytical investigation and has not been incorporated into a manuscript or publication.
+Existing cluster-transport calculations are not evidence for this strong-field theorem. This working note records a separate analytical investigation and has not been incorporated into a research manuscript or submitted to a journal.
+
+## Citation and reuse
+
+[CITATION.cff](CITATION.cff) and [CITATION.bib](CITATION.bib) identify this research
+collection; specify the exact Git commit used. [references.bib](references.bib)
+contains the scientific bibliography. A public GitHub repository is not a journal
+publication, a DOI, or peer review.
+
+Original code and documentation use the [MIT license](LICENSE). Third-party
+papers and dependencies retain their own rights. Research contact:
+[bharadwaj.hemanth.002@gmail.com](mailto:bharadwaj.hemanth.002@gmail.com).
+[Contribution guidance](CONTRIBUTING.md) · [Author metadata](AUTHORS.md).

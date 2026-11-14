@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "completed_at_utc": "2026-11-14T04:39:45.401219+00:00",
+  "evidence_level": "reproduction of declared symbolic identities and saved evidence; no matched Love coefficient",
+  "python_version": "3.11.1",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "sympy": "1.11.1",
+    "mpmath": "1.3.0"
+  },
+  "inputs_sha256": {
+    "requirements.txt": "62a66612eba47ab2843e8c22844ee6ab9e64b1a2af5c31975d56443c14d6b1ac",
+    "verify_reproduction.py": "d1f3931b3a3da57372db093a368d50b5cb8a8ce28e1a2908d2e31ab40741aa3b",
+    "verify_baseline.py": "d9699678c49cbf44295a86053b01807a641b6b7c2438fb4d8f2dc864eac0f187",
+    "results/baseline.json": "8fe8293160a2d018ccdd76aa8813c3b5ea1246b8adc66c4e57d53ef72783579b",
+    "verify_mixed_horizon.py": "53da25cd7cb34e392036dfa47a15df8116d14061d577d51029a5136eef0e6f09",
+    "results/mixed-horizon.json": "fd325a3bea089075592bbf62e3efc1b11a822644ae6cc783bf67a5d9a7f76c6a"
+  },
+  "comparisons": [
+    {
+      "record": "results/baseline.json",
+      "checks_passed": 32,
+      "vacuum_ricci_components_checked": 0,
+      "complete_output_matches_saved_record": true,
+      "serialized_output_matches_saved_bytes": true,
+      "elapsed_seconds": 2.753
+    },
+    {
+      "record": "results/mixed-horizon.json",
+      "checks_passed": 18,
+      "vacuum_ricci_components_checked": 16,
+      "complete_output_matches_saved_record": true,
+      "serialized_output_matches_saved_bytes": true,
+      "elapsed_seconds": 2.488
+    }
+  ],
+  "local_markdown_file_links_checked": 70,
+  "expected_scientific_records_rewritten": false
+}

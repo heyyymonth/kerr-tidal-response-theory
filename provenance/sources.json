@@ -1,0 +1,77 @@
+{
+  "audit_date_local": "2026-11-13",
+  "timezone": "America/Los_Angeles",
+  "scope": "Bounded foundational verification and nearby-source screening; no exhaustive novelty verdict",
+  "third_party_files_distributed": false,
+  "sources": [
+    {
+      "id": "Gounis2025",
+      "version": "Published JCAP 03 (2025) 002",
+      "doi": "10.1088/1475-7516/2025/03/002",
+      "url": "https://access.archive-ouverte.unige.ch/access/metadata/6f750ab1-3a83-4f83-b11c-4d26903dce33/download",
+      "sha256": "58d49474ca3438ce77fa3c9dc87002cb930c48710bbccfb246bebb3df65cd1d6",
+      "inspection": "Equations (2.11), (5.7)-(5.18), (5.26), (6.7); PDF pages 7, 13, 14, 15, 18 visually inspected",
+      "pdf_pages": 23
+    },
+    {
+      "id": "Gounis2024v1",
+      "version": "arXiv:2412.08249v1",
+      "url": "https://arxiv.org/pdf/2412.08249v1",
+      "sha256": "87a03e8ae8cb9ed9d29fa732620a087c36807feef500da109eb121cbce992f21",
+      "inspection": "Compared the end of section 5.1 with the published mixed-amplitude paragraph; not the equation-number authority"
+    },
+    {
+      "id": "CombaluzierSzteinsznaider2025",
+      "version": "Published JHEP 03 (2025) 124",
+      "doi": "10.1007/JHEP03(2025)124",
+      "url": "https://link.springer.com/content/pdf/10.1007/JHEP03(2025)124.pdf",
+      "inspection": "Publisher metadata and PDF matching discussion, section 4.3, operator degeneracy and appendix D context"
+    },
+    {
+      "id": "Iteanu2025",
+      "version": "Published JHEP 02 (2025) 174",
+      "doi": "10.1007/JHEP02(2025)174",
+      "url": "https://link.springer.com/content/pdf/10.1007/JHEP02(2025)174.pdf",
+      "inspection": "Publisher metadata and PDF quadratic matching discussion, sections 5.3 and 6.2"
+    },
+    {
+      "id": "Rodriguez2026",
+      "version": "arXiv:2604.08653v1",
+      "url": "https://arxiv.org/html/2604.08653v1",
+      "inspection": "Sections 2.2.4 and 6.3.2 and current version history; invited-review preprint, no journal publication verified"
+    },
+    {
+      "id": "Gralla2018",
+      "version": "arXiv:1710.11096v3; marked as matching published version",
+      "doi": "10.1088/1361-6382/aab186",
+      "url": "https://arxiv.org/html/1710.11096v3",
+      "inspection": "Sections 2 and 3; coordinate/solution conventions and buffer-region matching"
+    },
+    {
+      "id": "ParraMartinezPodo2025",
+      "version": "arXiv:2510.20694v2",
+      "url": "https://arxiv.org/html/2510.20694v2",
+      "inspection": "Version history, introduction, symmetry and EFT discussion; spherical background, spin left for future work"
+    },
+    {
+      "id": "Pani2015",
+      "version": "arXiv:1503.07365v2; PRD 92 (2015) 024010",
+      "url": "https://arxiv.org/abs/1503.07365",
+      "inspection": "Abstract only; linear tidal response and quadratic spin scope"
+    },
+    {
+      "id": "Bhatt2025",
+      "version": "Published PRD 112 (2025) 084065",
+      "doi": "10.1103/ftwb-vvnl",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/ftwb-vvnl",
+      "inspection": "Publisher metadata and abstract only"
+    },
+    {
+      "id": "Kumar2026",
+      "version": "Published JHEP 05 (2026) 294",
+      "doi": "10.1007/JHEP05(2026)294",
+      "url": "https://link.springer.com/article/10.1007/JHEP05(2026)294",
+      "inspection": "Publisher metadata and abstract only"
+    }
+  ]
+}

@@ -29,7 +29,7 @@ The transition to Kerr tidal response was a choice to pursue the user's interest
 
 ## What the cluster work does and does not tell us
 
-The current [cluster repository overview](../black-hole-recoil-dynamics/README.md) and [transport hypothesis](../black-hole-recoil-dynamics/docs/transport-hypothesis.md) describe completed conditional calculations and executed response experiments. Their contents were checked when preparing this record; older progress notes that describe the encounter implementation as wholly unfinished are superseded on that point.
+The current [cluster repository overview](https://github.com/heyyymonth/black-hole-recoil-dynamics/blob/96f93a706f55f2c4f5d4fd1c734157553dc022a7/README.md) and [transport hypothesis](https://github.com/heyyymonth/black-hole-recoil-dynamics/blob/96f93a706f55f2c4f5d4fd1c734157553dc022a7/docs/transport-hypothesis.md) describe completed conditional calculations and executed response experiments. Their contents were checked when preparing this record; older progress notes that describe the encounter implementation as wholly unfinished are superseded on that point.
 
 The stopped-generator occupation identity is a mathematical relation subject to its stated assumptions. The separate prediction under test approximates the full encounter-process expectation using a diffusion-process first-response calculation, then extrapolates to finite changes. Those are different statements.
 
@@ -106,9 +106,9 @@ The candidate conjecture is a target to investigate, not a conclusion to defend.
 
 ## Locations and continuity
 
-- [Cluster project](../black-hole-recoil-dynamics/README.md): original environmental-transport work and manuscript; unchanged by this learning checkpoint.
+- [Cluster project](https://github.com/heyyymonth/black-hole-recoil-dynamics/blob/96f93a706f55f2c4f5d4fd1c734157553dc022a7/README.md): original environmental-transport work and manuscript; unchanged by this learning checkpoint.
 - [Kerr starting equations and references](README.md): literature versions, mathematical conventions, and candidate mixed sector.
 - [Controlled horizon calculation](mixed-horizon.md): derivation, assumptions, and scope of the curvature obstruction.
 - [Baseline record](results/baseline.json) and [curvature record](results/mixed-horizon.json): exact checks and their declared limitations.
 
-The Kerr notes are local analytical working material, separate from the public GitHub cluster repository and its unreviewed manuscript. This checkpoint makes no new publication or priority claim.
+The Kerr notes are analytical working material in the separate Kerr Tidal Response Theory research collection. The cluster repository and its unreviewed manuscript remain unchanged. This is not a journal publication or a priority claim. See [provenance](PROVENANCE.md) for the preserved starting checkpoint and [the next lesson](docs/regularity-and-matching.md) for the unresolved matching step.

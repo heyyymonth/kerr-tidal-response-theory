@@ -1,5 +1,7 @@
 # New-chat handoff: Kerr tidal-response proof research
 
+> Historical handoff, preserved from the pre-repository checkpoint. The user subsequently chose **Kerr Tidal Response Theory** (`heyyymonth/kerr-tidal-response-theory`) as the public repository name. Read [PROVENANCE.md](PROVENANCE.md), [CLAIMS.md](CLAIMS.md), and [the next lesson](docs/regularity-and-matching.md) for the continuation status. Statements below about a repository not yet existing describe the original checkpoint, not the current Git history.
+
 Prepared for Venkata Hemanth Athota on 13 November 2026. This is a continuation brief, not a manuscript or a claim of scientific novelty.
 
 ## User objective

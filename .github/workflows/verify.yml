@@ -1,0 +1,44 @@
+name: Research verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verification-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  reproduce:
+    name: Symbolic reproduction
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the research collection
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Set up Python 3.11
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned calculation dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip check
+      - name: Reproduce records and check local links
+        run: python verify_reproduction.py --report tmp/ci-reproduction.json
+      - name: Confirm tracked evidence was not rewritten
+        run: git diff --exit-code
+      - name: Retain execution receipt
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: symbolic-reproduction-${{ github.run_id }}
+          path: tmp/ci-reproduction.json
+          if-no-files-found: error
+          retention-days: 30
