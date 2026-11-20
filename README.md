@@ -177,7 +177,7 @@ It is harmonic for the flat two-dimensional operator, but not for the three-dime
 
 ## 4. Derive the actual nonlinear coupling equation
 
-Let $\mathcal E_0$ be the Kerr background, $f_0=\mathrm{Re}\,\mathcal E_0$, and define the real-linear operator
+Let $\mathcal E_0$ be the Kerr background, $f_0=\mathrm{Re}(\mathcal E_0)$, and define the real-linear operator
 
 $$
 \mathcal L_0h=f_0Dh+\mathrm{Re}(h)D\mathcal E_0
