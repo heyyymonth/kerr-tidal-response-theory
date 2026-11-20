@@ -77,7 +77,7 @@ $$
 Here $f$ is the metric potential and $\varpi$ is the twist potential. The correctly normalized equation is
 
 $$
-\operatorname{Re}(\mathcal E)\Delta_{\rm ax}\mathcal E
+\mathrm{Re}(\mathcal E)\Delta_{\rm ax}\mathcal E
 =\nabla\mathcal E\cdot\nabla\mathcal E.
 $$
 
@@ -109,7 +109,7 @@ $$
 B(g,h)=(x^2-1)g_xh_x+(1-y^2)g_yh_y.
 $$
 
-The common factor $[\sigma^2(x^2-y^2)]^{-1}$ cancels from the Ernst equation, leaving $\operatorname{Re}(\mathcal E)D\mathcal E=B(\mathcal E,\mathcal E)$.
+The common factor $[\sigma^2(x^2-y^2)]^{-1}$ cancels from the Ernst equation, leaving $\mathrm{Re}(\mathcal E)D\mathcal E=B(\mathcal E,\mathcal E)$.
 
 Two independent exact-background checks fix the normalization:
 
@@ -165,7 +165,7 @@ This recovers a known seed-level regularity argument. It does **not** identify e
 
 ### Printed holomorphic shortcut fails an elementary check
 
-Equation (6.7) of [1], printed p.15, describes arbitrary real parts of holomorphic functions of $\rho+iz$ as seed solutions. Take $\psi=\operatorname{Re}(\rho+iz)^2=\rho^2-z^2$. Then
+Equation (6.7) of [1], printed p.15, describes arbitrary real parts of holomorphic functions of $\rho+iz$ as seed solutions. Take $\psi=\mathrm{Re}(\rho+iz)^2=\rho^2-z^2$. Then
 
 $$
 (\partial_\rho^2+\partial_z^2)\psi=0,
@@ -177,10 +177,10 @@ It is harmonic for the flat two-dimensional operator, but not for the three-dime
 
 ## 4. Derive the actual nonlinear coupling equation
 
-Let $\mathcal E_0$ be the Kerr background, $f_0=\operatorname{Re}\mathcal E_0$, and define the real-linear operator
+Let $\mathcal E_0$ be the Kerr background, $f_0=\mathrm{Re}\,\mathcal E_0$, and define the real-linear operator
 
 $$
-\mathcal L_0h=f_0Dh+\operatorname{Re}(h)D\mathcal E_0
+\mathcal L_0h=f_0Dh+\mathrm{Re}(h)D\mathcal E_0
 -2B(\mathcal E_0,h).
 $$
 
@@ -191,7 +191,7 @@ $$
 \qquad
 \mathcal L_0\mathcal E_2
 =B(\mathcal E_1,\mathcal E_1)
--\operatorname{Re}(\mathcal E_1)D\mathcal E_1.
+-\mathrm{Re}(\mathcal E_1)D\mathcal E_1.
 $$
 
 For two independent applied fields, use
@@ -206,8 +206,8 @@ The mixed equation is
 $$
 \mathcal L_0\mathcal E_{AB}
 =2B(\mathcal E_A,\mathcal E_B)
--\operatorname{Re}(\mathcal E_A)D\mathcal E_B
--\operatorname{Re}(\mathcal E_B)D\mathcal E_A.
+-\mathrm{Re}(\mathcal E_A)D\mathcal E_B
+-\mathrm{Re}(\mathcal E_B)D\mathcal E_A.
 $$
 
 This identity was checked for arbitrary component functions, not fitted to particular solutions. It exposes the real proof obligation: the second-order equation is driven. Excluding a singular homogeneous branch is insufficient to determine whether the regular, driven solution contains an independent conservative response after matching.
