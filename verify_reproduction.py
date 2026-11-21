@@ -1,4 +1,4 @@
-"""Recompute both scientific records without rewriting the expected evidence.
+"""Recompute scientific records without rewriting the expected evidence.
 
 Optionally write a separate execution receipt. This verifies declared algebra
 and record integrity, not the unresolved Kerr boundary conditions or matching.
@@ -18,12 +18,14 @@ from urllib.parse import unquote, urlsplit
 
 import verify_baseline
 import verify_mixed_horizon
+import verify_response_basis
 
 
 ROOT = Path(__file__).resolve().parent
 CALCULATIONS = (
     (verify_baseline, "results/baseline.json", 32, 0),
     (verify_mixed_horizon, "results/mixed-horizon.json", 18, 16),
+    (verify_response_basis, "results/response-basis.json", 33, 0),
 )
 
 
@@ -113,7 +115,7 @@ def run(report_path=None):
     if os.environ.get("GITHUB_SHA"):
         report["github_commit"] = os.environ["GITHUB_SHA"]
         report["github_run_id"] = os.environ.get("GITHUB_RUN_ID")
-    print(f"Reproduced 32 baseline + 18 curvature checks and 16 Ricci components; {link_count} local file links valid.")
+    print(f"Reproduced 32 baseline + 18 curvature checks, 16 Ricci components, and 33 response-basis checks; {link_count} local file links valid.")
     return report
 
 
@@ -123,7 +125,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     target = args.report.resolve() if args.report else None
     protected = {ROOT / name for _, name, _, _ in CALCULATIONS}
-    protected.update(ROOT / name for name in ("verify_baseline.py", "verify_mixed_horizon.py", "verify_reproduction.py", "requirements.txt"))
+    protected.update(ROOT / name for name in ("verify_baseline.py", "verify_mixed_horizon.py", "verify_response_basis.py", "verify_reproduction.py", "requirements.txt"))
     if target in protected:
         parser.error("--report cannot overwrite a calculation input or expected scientific record")
     result = run(target)

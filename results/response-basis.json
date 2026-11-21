@@ -1,0 +1,216 @@
+{
+  "script_sha256": "696b121959c8c16a7d2da184ad8aeb467ad03678025fea6c1c6d0489930b7432",
+  "sympy_version": "1.11.1",
+  "evidence_level": "Exact local STF algebra and harmonic-coordinate calibration; no matched Kerr coefficient",
+  "checks_passed": 33,
+  "checks": [
+    {
+      "name": "Rank-two axial tensor is trace free",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Rank-two axial tensor norm",
+      "expected": "2/3",
+      "status": "verified"
+    },
+    {
+      "name": "Rank-four axial tensor norm",
+      "expected": "8/35",
+      "status": "verified"
+    },
+    {
+      "name": "Rank-four trace (0,0)",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Rank-four trace (0,1)",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Rank-four trace (0,2)",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Rank-four trace (1,1)",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Rank-four trace (1,2)",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Rank-four trace (2,2)",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Quadrupole Taylor normalization",
+      "expected": "-X**2/6 - Y**2/6 + Z**2/3",
+      "status": "verified"
+    },
+    {
+      "name": "Hexadecapole Taylor normalization",
+      "expected": "Z**4/24 - Z**2*(X**2 + Y**2 + Z**2)/28 + (X**2 + Y**2 + Z**2)**2/280",
+      "status": "verified"
+    },
+    {
+      "name": "Aligned invariant I0",
+      "expected": "8/35",
+      "status": "verified"
+    },
+    {
+      "name": "Aligned invariant I1",
+      "expected": "8/105",
+      "status": "verified"
+    },
+    {
+      "name": "Aligned invariant I2",
+      "expected": "16/105",
+      "status": "verified"
+    },
+    {
+      "name": "Independent-contraction witness determinant",
+      "expected": "-128/25725",
+      "status": "verified"
+    },
+    {
+      "name": "SO(3) scalar multiplicity in declared sector",
+      "expected": "3",
+      "status": "verified"
+    },
+    {
+      "name": "Aligned measurement rank",
+      "expected": "1",
+      "status": "verified"
+    },
+    {
+      "name": "Unmeasurable aligned direction 0",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Unmeasurable aligned direction 1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Rotation covariance I0",
+      "expected": "-714/5",
+      "status": "verified"
+    },
+    {
+      "name": "Rotation covariance I1",
+      "expected": "-142/5",
+      "status": "verified"
+    },
+    {
+      "name": "Rotation covariance I2",
+      "expected": "-412/7",
+      "status": "verified"
+    },
+    {
+      "name": "Projected quadrupole response normalization",
+      "expected": "chi**2*eta2*eta4*(-48*c0/35 - 16*c1/35 - 32*c2/35)",
+      "status": "verified"
+    },
+    {
+      "name": "Full STF response variation 0",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Full STF response variation 1",
+      "expected": "-chi**2*eta2*eta4*(-48*c0/35 - 16*c1/35 - 32*c2/35)",
+      "status": "verified"
+    },
+    {
+      "name": "Full STF response variation 2",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Full STF response variation 3",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Full STF response variation 4",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Prolate quadrupole to solid harmonic",
+      "expected": "-1/2 + (9*k**2*x**2*y**2/2 - 3*k**2*(x**2 + y**2 - 1)/2)/(2*k**2)",
+      "status": "verified"
+    },
+    {
+      "name": "Prolate hexadecapole to solid harmonics",
+      "expected": "3/8 - (45*k**2*x**2*y**2/2 - 15*k**2*(x**2 + y**2 - 1)/2)/(4*k**2) + (1225*k**4*x**4*y**4/8 - 525*k**4*x**2*y**2*(x**2 + y**2 - 1)/4 + 105*k**4*(x**2 + y**2 - 1)**2/8)/(8*k**4)",
+      "status": "verified"
+    },
+    {
+      "name": "Pure prescribed harmonic data after calibration",
+      "expected": "u2*(3*k**2*x**2*y**2/2 - k**2*(x**2 + y**2 - 1)/2) + u4*(35*k**4*x**4*y**4/8 - 15*k**4*x**2*y**2*(x**2 + y**2 - 1)/4 + 3*k**4*(x**2 + y**2 - 1)**2/8)",
+      "status": "verified"
+    },
+    {
+      "name": "Spin-square scale correction to alpha4",
+      "expected": "-16*u4/35",
+      "status": "verified"
+    },
+    {
+      "name": "Spin-square scale correction to alpha2",
+      "expected": "-2*u2/3 - 8*u4/7",
+      "status": "verified"
+    }
+  ],
+  "aligned_invariant_weights": [
+    "8/35",
+    "8/105",
+    "16/105"
+  ],
+  "independence_witness": [
+    [
+      "8/35",
+      "8/105",
+      "16/105"
+    ],
+    [
+      "8/35",
+      "-4/105",
+      "4/105"
+    ],
+    [
+      "4/35",
+      "-8/35",
+      "0"
+    ]
+  ],
+  "angular_momentum_channels": [
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      2
+    ]
+  ],
+  "kappa_parallel_convention": "-48*c0/35 - 16*c1/35 - 32*c2/35",
+  "not_established": [
+    "Full on-shell EFT basis and source map",
+    "Horizon/axis boundary solution",
+    "Any physical value of c0,c1,c2 or kappa_parallel",
+    "Channel-specific novelty"
+  ]
+}

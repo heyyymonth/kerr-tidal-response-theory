@@ -4,12 +4,12 @@ Classical general relativity · Rotating black holes · Nonlinear tidal response
 
 **Contributed by Hemanth.**
 
-Venkata Hemanth Athota · Independent researcher · Working research notes · 13 November 2026
+Venkata Hemanth Athota · Independent researcher · Working research notes · Updated 20 November 2026
 
 [![Research verification](https://github.com/heyyymonth/kerr-tidal-response-theory/actions/workflows/verify.yml/badge.svg)](https://github.com/heyyymonth/kerr-tidal-response-theory/actions/workflows/verify.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-[Claims and evidence](CLAIMS.md) · [Regularity and matching](docs/regularity-and-matching.md) · [Literature audit](docs/literature-audit.md) · [Provenance](PROVENANCE.md) · [Author and contact](AUTHORS.md)
+[Claims and evidence](CLAIMS.md) · [Response definition](docs/response-definition.md) · [Regularity and matching](docs/regularity-and-matching.md) · [Literature audit](docs/literature-audit.md) · [Provenance](PROVENANCE.md) · [Author and contact](AUTHORS.md)
 
 The question is whether regular rotating black holes must have vanishing independently induced conservative response to stationary, axisymmetric tides beyond linear order. The present work reconstructs the starting equations and audits the closest published argument. It establishes algebraic consistency checks and a conditional horizon-curvature obstruction, not a general nonlinear Kerr Love theorem or a physical counterexample.
 
@@ -25,7 +25,21 @@ The horizon calculation is recorded in [Mixed quadrupoles: a controlled horizon-
 |---|---|
 | 32 baseline symbolic checks, 18 curvature checks, and 16 vacuum Ricci-component checks reproduced against the complete saved records. | No independently matched nonlinear Kerr Love coefficient has been computed. |
 | Exact static and conditional rotating local curvature obstruction reconstructed with stated assumptions. | The aligned quadrupole--hexadecapole response at order $\eta_2\eta_4\chi^2$ is a candidate conjecture. |
-| Versioned source audit and portable research-history record. | Response definition, identifiable tensor combination, boundary conditions, matching, and channel-specific novelty require further work. |
+| Three independent scalar contractions in the declared electric-tidal spin-squared sector; alignment measures one combination. 33 new exact algebra checks. | Full EFT reduction, physical source calibration, boundary solution, matching, and channel-specific novelty remain open. |
+
+The [20 November continuation](docs/response-definition.md) defines a conditional
+aligned coefficient with a fixed normalization:
+
+```math
+q/M^3=\kappa_{\parallel}\eta_2\eta_4\chi^2,\qquad
+\kappa_{\parallel}=-\frac{16}{35}(3c_0+c_1+2c_2).
+```
+
+Here $q$ is the target contribution to the mass quadrupole and $c_a$ multiply
+the three explicitly defined algebraic operators. Their values remain unknown.
+The same note proves that raw prolate seed coefficients mix spherical applied
+moments and explains the necessary matching prescription. It does not solve the
+tidally perturbed Kerr metric.
 
 Use Python 3.11 and the pinned dependencies:
 
@@ -36,7 +50,7 @@ python3 -m venv .venv
 .venv/bin/python verify_reproduction.py
 ```
 
-The reproduction command reruns both calculations, checks complete saved outputs
+The reproduction command reruns all three calculations, checks complete saved outputs
 and hashes, and validates local Markdown file links. It does not rewrite expected
 results. [Execution receipt](results/reproduction.json) · [CI workflow](.github/workflows/verify.yml).
 
@@ -54,7 +68,9 @@ The [bounded literature audit](docs/literature-audit.md) also checks the wider
 Schwarzschild symmetry argument of [6], which leaves spinning black holes for
 future work, and records nearby papers screened at abstract level. Gralla [5]
 motivates care in defining response; its historical status statements are not
-treated as current conclusions.
+treated as current conclusions. The [20 November audit](docs/literature-audit.md#20-november-2026-channel-audit)
+records a new preprint challenging broader nonlinear vanishing claims in a
+different sector; it does not settle the aligned Kerr question.
 
 ## 1. Define the boundary-value problem
 

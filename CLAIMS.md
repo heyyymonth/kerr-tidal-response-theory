@@ -1,8 +1,8 @@
 # Claims and evidence
 
-Status at the repository foundation, 13 November 2026. A passing algebra check
-is not a matched-response calculation. The unchanged scientific records contain
-32 baseline checks, 18 curvature checks, and 16 Ricci-component checks.
+Updated 20 November 2026. A passing algebra check is not a matched-response
+calculation. The unchanged foundation contains 32 baseline checks, 18 curvature
+checks, and 16 Ricci-component checks. A separate record adds 33 response-basis checks.
 
 | Statement | Status and supporting evidence | Boundary of the claim |
 |---|---|---|
@@ -16,7 +16,10 @@ is not a matched-response calculation. The unchanged scientific records contain
 | The same leading logarithmic limit holds in the declared rotating family. | Conditional asymptotic argument in [mixed-horizon.md](mixed-horizon.md#3-the-two-rotating-branches), supported by exact identities. | Requires reflection symmetry, the specified vacuum family, fixed nonzero Kerr-seed parameter, and fixed amplitudes. It is not a black-box symbolic proof. |
 | Finite applied amplitude cannot remove that local obstruction. | Leading asymptotic dominance; the static mixed derivative itself diverges. | No global event-horizon classification, nakedness, or completeness theorem. |
 | Nonlinear Schwarzschild vanishing results already exist. | Primary papers and scope recorded in [the literature audit](docs/literature-audit.md). | These are prior results, not this project's discoveries; rotation requires a separate argument. |
-| The aligned order eta_2 eta_4 chi^2 mass-quadrupole response vanishes. | **Conjecture only.** Angular allowance is checked; no coefficient is defined by completed matching or calculated. | Tensor basis, identifiable combination, horizon/axis boundary conditions, parameter conventions, and external matching remain unresolved. |
+| The algebraic parity-even A2 A2 B4 spin-squared sector has three scalars. | Representation count and nonzero exact independence determinant in [response-definition.md](docs/response-definition.md); [33 checks](results/response-basis.json). | Completeness only within the stated pointwise tensor sector, not a full EFT reduction. |
+| Alignment measures one combination, 3c0+c1+2c2, with the declared normalization of kappa_parallel. | Exact contractions, rank/nullspace and all five STF response variations in [verify_response_basis.py](verify_response_basis.py). | No physical coefficient value has been calculated. Other sectors and conventions must be audited before physical matching. |
+| A prolate ell=4 seed also changes spherical ell=2 and constant terms. | Exact polynomial identities and inverse calibration in the new note and saved record. | Harmonic seed calibration, not the physical source map of the rotating nonlinear metric. |
+| The aligned order eta_2 eta_4 chi^2 mass-quadrupole response vanishes. | **Conjecture only.** An algebraic projection and normalization are now defined. | Full EFT closure, physical source map, horizon/axis boundary solution and external matching remain unresolved. |
 | This particular mixed Kerr channel is novel. | **Not established.** A bounded primary-source audit found a broader documented gap. | Search non-detection is not proof of priority or completeness. |
 | The inherited evidence can be reproduced. | [verify_reproduction.py](verify_reproduction.py) and [reproduction.json](results/reproduction.json). | Reproduction checks identities and record integrity, not physical calibration or scientific peer review. |
 

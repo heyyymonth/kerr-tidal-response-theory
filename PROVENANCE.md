@@ -30,7 +30,8 @@ synced parent `sources/` file was modified or imported as Kerr evidence.
 | [verify_baseline.py](verify_baseline.py) | Original exact Ernst, Legendre, variation, and angular checks. |
 | [verify_mixed_horizon.py](verify_mixed_horizon.py) | Original reflected vacuum frame contraction, curvature controls, and static limits. |
 | [baseline.json](results/baseline.json), [mixed-horizon.json](results/mixed-horizon.json) | Inherited deterministic scientific records; retained unchanged at publication. |
-| [verify_reproduction.py](verify_reproduction.py) | Read-only comparison of fresh complete outputs, pinned package versions, and script/result hashes; also checks local Markdown file targets. |
+| [verify_response_basis.py](verify_response_basis.py), [response-basis.json](results/response-basis.json) | 20 November continuation: 33 exact STF, response-normalization and harmonic-coordinate checks; no physical coefficient value. |
+| [verify_reproduction.py](verify_reproduction.py) | Read-only comparison of all three fresh complete outputs, pinned package versions, and script/result hashes; also checks local Markdown file targets. |
 | [reproduction.json](results/reproduction.json) | Fresh execution receipt with actual time, interpreter, platform, package versions, input hashes, and comparisons. |
 
 Run with Python 3.11:
@@ -49,7 +50,7 @@ regenerate expected records and should be used only for a reviewed scientific
 change, as described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 The CI workflow installs the same pinned SymPy and mpmath versions in a fresh
-Python 3.11 environment, checks dependencies, reruns both calculations, checks
+Python 3.11 environment, checks dependencies, reruns all three calculations, checks
 local file links, and uploads its execution receipt. Actions are pinned to
 verified commit SHAs. The receipt records the actual Python patch version;
 the entire operating system and Python build are not frozen. Dependency pins
@@ -61,6 +62,23 @@ CI reports numerical/algebraic execution status. It does not review the
 conditional asymptotic proof, validate global boundary conditions, or perform
 EFT matching. The 16 Ricci components are checked after imposing the declared
 local vacuum relations; they do not establish an arbitrary full metric as vacuum.
+
+## Response-definition continuation
+
+On 20 November 2026, the declared parity-even electric 224 spin-squared algebraic
+sector was reconstructed by an SO(3) multiplicity count and three independent
+Cartesian contractions. Exact aligned weights, two invisible coefficient
+directions, the STF functional derivative and a prolate-to-solid-harmonic
+calibration were checked. A separate review independently confirmed the
+formulas and all 33 new checks. This review used AI assistance as disclosed in
+[AUTHORS.md](AUTHORS.md); it is not scientific peer review.
+
+The new [definition note](docs/response-definition.md) records the conditional
+normalization and remaining matching prescription. Its algebraic completeness
+does not establish a full on-shell EFT basis, physical source map or a Kerr
+coefficient. The original scripts and two expected records remain unchanged.
+The execution receipt is refreshed for the expanded collection; the earlier
+receipt remains available in Git history. No third-party paper is distributed.
 
 ## Literature and rights
 

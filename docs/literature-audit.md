@@ -5,6 +5,9 @@ foundation and nearby literature, not an exhaustive priority search. The
 candidate aligned mixed quadrupole--hexadecapole spin-squared channel remains
 unresolved in this repository. Its novelty is **not established**.
 
+The foundation audit below is historical. The [20 November update](#20-november-2026-channel-audit)
+adds a recent competing result and more focused matching references.
+
 ## Sources checked
 
 | Source and version | What was inspected | Relevance and limits |
@@ -59,3 +62,30 @@ combination and compare its normalization, symmetry restrictions, perturbative
 order, and matching prescription with the relevant full papers and later
 versions. The supported conclusion now is that the proposed calculation is
 motivated and has not been carried out here; no discovery claim is made.
+
+## 20 November 2026 channel audit
+
+The [response-definition note](response-definition.md) now fixes the algebraic
+projection under examination. The following primary-source sections were read:
+
+| Source | Inspection and implication |
+|---|---|
+| [Combaluzier-Szteinsznaider et al., arXiv:2410.10952v2](https://arxiv.org/html/2410.10952v2), sections 4.1--4.2 and appendix D | Axisymmetric matching determines combinations of operators, not necessarily all their coefficients. This motivates the aligned rank-one projection; no new general identifiability principle is claimed. |
+| [Saketh, Zhou and Ivanov, arXiv:2307.10391v2](https://arxiv.org/html/2307.10391v2), sections 2, 5 and 7 | The tidal-amplitude expansion is linear, with quadratic-curvature worldline terms. Their all-spin dynamical matching and quadrupole--octupole mixing do not compute our cubic-action electric 224 sector. |
+
+[Bucciotti, arXiv:2611.25059v1](https://arxiv.org/html/2611.25059v1), submitted
+18 November 2026, reports a nonzero non-axisymmetric octupolar response at cubic
+tidal order for Schwarzschild, using EFT matching. Sections on setup, matching
+and discussion were inspected. Its axisymmetric combination still vanishes.
+This challenges the broader all-orders argument of Parra-Martinez and Podo;
+it does not settle our aligned quadratic-tide Kerr sector. It is an unreviewed
+preprint whose calculation has not been reproduced here. Cubic **response**
+uses quartic tidal operators; our cubic operators produce quadratic response.
+
+The search included `Kerr nonlinear Love numbers spin squared quadrupole
+hexadecapole matching`, `Kerr quadratic Love`, `nonlinear Kerr Love numbers
+matching`, cubic tidal-operator queries, and dated nonlinear Love searches
+through 20 November. No exact matching calculation for our proposed channel
+was located. Optical-Kerr search noise and alternate operator conventions
+limit that finding; it is not a novelty certification. The April review is a
+dated scope assessment and predates the new preprint.

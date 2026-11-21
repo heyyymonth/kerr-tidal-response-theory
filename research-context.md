@@ -4,6 +4,14 @@ Venkata Hemanth Athota · Research and learning context · 13 November 2026
 
 This record preserves the scientific question, earlier work, reasons for narrowing the approach, and the limits of the current evidence. It accompanies the technical [starting equations](README.md) and [horizon-curvature calculation](mixed-horizon.md). It is a learning and continuity record, not a manuscript or a claim of a completed new theorem.
 
+**Continuation, 20 November 2026:** [The response-definition note](docs/response-definition.md)
+now resolves the three-scalar algebraic sector and the single combination
+accessible in alignment, with 33 exact checks and a harmonic-coordinate
+calibration. The physical source map, full EFT reduction and matching remain
+open. Statements below about an undefined combination describe the earlier
+checkpoint. Consult the updated [claims](CLAIMS.md) and [literature audit](docs/literature-audit.md)
+before continuing; no physical Kerr response has been computed.
+
 ## The question in ordinary language
 
 A distant companion or other external matter produces a gravitational field that varies across the black hole's neighborhood. That variation is a tidal field. We want to understand the black hole's independently identifiable conservative response when different components of the applied tide interact and the black hole rotates.
