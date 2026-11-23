@@ -31,7 +31,8 @@ synced parent `sources/` file was modified or imported as Kerr evidence.
 | [verify_mixed_horizon.py](verify_mixed_horizon.py) | Original reflected vacuum frame contraction, curvature controls, and static limits. |
 | [baseline.json](results/baseline.json), [mixed-horizon.json](results/mixed-horizon.json) | Inherited deterministic scientific records; retained unchanged at publication. |
 | [verify_response_basis.py](verify_response_basis.py), [response-basis.json](results/response-basis.json) | 20 November continuation: 33 exact STF, response-normalization and harmonic-coordinate checks; no physical coefficient value. |
-| [verify_reproduction.py](verify_reproduction.py) | Read-only comparison of all three fresh complete outputs, pinned package versions, and script/result hashes; also checks local Markdown file targets. |
+| [verify_linear_drivers.py](verify_linear_drivers.py), [linear-drivers.json](results/linear-drivers.json) | 22 November continuation: 82 exact linear recursion, metric identity, boundary normalization and kernel checks. |
+| [verify_reproduction.py](verify_reproduction.py) | Read-only comparison of all four fresh complete outputs, pinned package versions, and script/result hashes; also checks local Markdown file targets. |
 | [reproduction.json](results/reproduction.json) | Fresh execution receipt with actual time, interpreter, platform, package versions, input hashes, and comparisons. |
 
 Run with Python 3.11:
@@ -50,7 +51,7 @@ regenerate expected records and should be used only for a reviewed scientific
 change, as described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 The CI workflow installs the same pinned SymPy and mpmath versions in a fresh
-Python 3.11 environment, checks dependencies, reruns all three calculations, checks
+Python 3.11 environment, checks dependencies, reruns all four calculations, checks
 local file links, and uploads its execution receipt. Actions are pinned to
 verified commit SHAs. The receipt records the actual Python patch version;
 the entire operating system and Python build are not frozen. Dependency pins
@@ -81,6 +82,17 @@ The execution receipt is refreshed for the expanded collection; the earlier
 receipt remains available in Git history. No third-party paper is distributed.
 
 ## Literature and rights
+
+The 22 November [linear-construction note](docs/linear-construction.md) uses the
+known distorted-Kerr metric and Ernst map with explicitly chosen seed and
+parameter conventions. Two derivations of the spin coefficients agreed, and
+the final script checks their differential equations directly. The metric
+extension and finite-mode uniqueness arguments are stated separately from the
+82 algebra checks. Review assistance is AI-assisted, not peer review. The
+published Gounis Eq. (4.1) was checked in the saved published text, and
+Abdolrahimi et al. arXiv:1509.01665v2 section 2 was read in primary HTML.
+Its later rescaled coordinate/charge conventions are not silently imported.
+No pure-electric physical source map or new Love coefficient is claimed.
 
 [sources.json](provenance/sources.json) records versioned source locations,
 inspection scope and available download hashes. The

@@ -5,6 +5,11 @@ Venkata Hemanth Athota · Learning and proof-obligation note · 13 November 2026
 This note explains the next step. It does not solve the mixed Kerr problem.
 The established calculations and their limits are in [CLAIMS.md](../CLAIMS.md).
 
+**22 November continuation:** [Linear construction](linear-construction.md)
+now implements a mathematical regularity problem for two declared driver
+families. The original pure-electric matching problem below is a distinct
+later interpretation task, not a condition for that restricted construction lemma.
+
 **20 November continuation:** [Response definition](response-definition.md)
 now classifies the declared algebraic sector, fixes its aligned normalization,
 and checks harmonic-source calibration. The full EFT reduction and physical

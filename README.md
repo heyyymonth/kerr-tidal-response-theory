@@ -4,14 +4,22 @@ Classical general relativity · Rotating black holes · Nonlinear tidal response
 
 **Contributed by Hemanth.**
 
-Venkata Hemanth Athota · Independent researcher · Working research notes · Updated 20 November 2026
+Venkata Hemanth Athota · Independent researcher · Working research notes · Updated 22 November 2026
 
 [![Research verification](https://github.com/heyyymonth/kerr-tidal-response-theory/actions/workflows/verify.yml/badge.svg)](https://github.com/heyyymonth/kerr-tidal-response-theory/actions/workflows/verify.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-[Claims and evidence](CLAIMS.md) · [Response definition](docs/response-definition.md) · [Regularity and matching](docs/regularity-and-matching.md) · [Literature audit](docs/literature-audit.md) · [Provenance](PROVENANCE.md) · [Author and contact](AUTHORS.md)
+[Claims and evidence](CLAIMS.md) · [Linear construction](docs/linear-construction.md) · [Response definition](docs/response-definition.md) · [Regularity and matching](docs/regularity-and-matching.md) · [Literature audit](docs/literature-audit.md) · [Provenance](PROVENANCE.md) · [Author and contact](AUTHORS.md)
 
 The question is whether regular rotating black holes must have vanishing independently induced conservative response to stationary, axisymmetric tides beyond linear order. The present work reconstructs the starting equations and audits the closest published argument. It establishes algebraic consistency checks and a conditional horizon-curvature obstruction, not a general nonlinear Kerr Love theorem or a physical counterexample.
+
+The current emphasis is mathematical construction and proof, with physical
+interpretation explaining the variables and boundary conditions. The
+[22 November construction](docs/linear-construction.md) gives two explicit
+linear driver families through spin squared, a local metric-regularity argument,
+and a uniqueness lemma in a declared finite-mode class. Their full growing
+boundary data include spin-linked odd angular terms. A separately calibrated
+pure-electric physical source and a Love coefficient are not claimed.
 
 For the research question, learning sequence, and reasons earlier approaches do not settle this proof, start with [What we are trying to prove, and how we reached the question](research-context.md).
 
@@ -26,6 +34,7 @@ The horizon calculation is recorded in [Mixed quadrupoles: a controlled horizon-
 | 32 baseline symbolic checks, 18 curvature checks, and 16 vacuum Ricci-component checks reproduced against the complete saved records. | No independently matched nonlinear Kerr Love coefficient has been computed. |
 | Exact static and conditional rotating local curvature obstruction reconstructed with stated assumptions. | The aligned quadrupole--hexadecapole response at order $\eta_2\eta_4\chi^2$ is a candidate conjecture. |
 | Three independent scalar contractions in the declared electric-tidal spin-squared sector; alignment measures one combination. 33 new exact algebra checks. | Full EFT reduction, physical source calibration, boundary solution, matching, and channel-specific novelty remain open. |
+| Six explicit linear Ernst functions, regular metric reconstruction in the prescribed family, and a restricted kernel/uniqueness argument. 82 linear-construction checks. | The mixed driven solution, its mathematical response functional, and any later physical matching remain to be computed. |
 
 The [20 November continuation](docs/response-definition.md) defines a conditional
 aligned coefficient with a fixed normalization:
@@ -50,7 +59,7 @@ python3 -m venv .venv
 .venv/bin/python verify_reproduction.py
 ```
 
-The reproduction command reruns all three calculations, checks complete saved outputs
+The reproduction command reruns all four calculations, checks complete saved outputs
 and hashes, and validates local Markdown file links. It does not rewrite expected
 results. [Execution receipt](results/reproduction.json) · [CI workflow](.github/workflows/verify.yml).
 

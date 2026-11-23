@@ -4,6 +4,16 @@ Venkata Hemanth Athota · Research and learning context · 13 November 2026
 
 This record preserves the scientific question, earlier work, reasons for narrowing the approach, and the limits of the current evidence. It accompanies the technical [starting equations](README.md) and [horizon-curvature calculation](mixed-horizon.md). It is a learning and continuity record, not a manuscript or a claim of a completed new theorem.
 
+**Current direction, 22 November 2026:** the user explicitly prioritized a
+mathematical problem with physical interpretation. The immediate deliverables
+are constructions, boundary conditions, and proofs; physical EFT matching is a
+later interpretation task rather than a prerequisite for every mathematical
+result. [The linear-construction note](docs/linear-construction.md) now supplies
+six Ernst functions through spin squared, a local metric extension argument,
+and restricted uniqueness for fully specified boundary data. Those data contain
+spin-linked odd growing modes. The mixed sourced problem is next; this family
+has not been identified with the original pure-electric physical conjecture.
+
 **Continuation, 20 November 2026:** [The response-definition note](docs/response-definition.md)
 now resolves the three-scalar algebraic sector and the single combination
 accessible in alignment, with 33 exact checks and a harmonic-coordinate

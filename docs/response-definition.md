@@ -7,6 +7,12 @@ derived below. The coefficient's physical value, the full EFT reduction, and
 the mixed Kerr boundary-value solution remain uncomputed. This is a research
 definition with explicit remaining conditions, not a vanishing theorem.
 
+**22 November continuation:** the immediate work is now mathematical.
+[Linear construction](linear-construction.md) gives regular driver families
+with a complete mathematical boundary prescription. Their spin-linked odd
+growing data have not been converted to the pure-electric external convention
+used in this note. Keep the two prescriptions distinct until that map is proved.
+
 ## 1. External variables and normalization
 
 Work in four-dimensional vacuum GR near a subextremal Kerr background, with

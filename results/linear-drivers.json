@@ -1,0 +1,448 @@
+{
+  "script_sha256": "cb0180d4ed393888b3d42a85336878aac59c5831636e85f94a2569b1c18368be",
+  "sympy_version": "1.11.1",
+  "checks_passed": 82,
+  "checks": [
+    {
+      "name": "Soliton derivative at spin zero",
+      "expected": "2*P*(x - 1)/(x + 1)",
+      "status": "verified"
+    },
+    {
+      "name": "Soliton derivative at first spin order",
+      "expected": "I*(4*P*y + S*y - T*x)/(x + 1)**2",
+      "status": "verified"
+    },
+    {
+      "name": "Soliton derivative at second spin order",
+      "expected": "2*P*(-x*(x + 1) + 2*y**2)/(x + 1)**3 + 2*y*(S*y - T*x)/(x + 1)**3 + (-S*x + T*y)/(x + 1)**2",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 harmonic seed",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 recursion spin0",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 recursion spin1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 recursion spin2",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 u0 reflection",
+      "expected": "(x - 1)*(3*x**2*y**2 - x**2 - y**2 - 1)/(3*(x + 1))",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 v1 reflection",
+      "expected": "2*y*(x - 1)*(2*x**2 - 3*x*y**2 + 3*x - y**2 - 1)/(3*(x + 1)**2)",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 u2 reflection",
+      "expected": "-(3*x**5*y**2 - x**5 + 6*x**4*y**2 - 2*x**4 - x**3*y**2 + 3*x**3 - 6*x**2*y**4 - 11*x**2*y**2 + 3*x**2 + 8*x*y**4 - 12*x*y**2 + 2*y**4 + 7*y**2 + 1)/(3*(x + 1)**3)",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 horizon u0",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 horizon v1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 horizon u2",
+      "expected": "-(1 - y**2)**2/6",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 auxiliary horizon a",
+      "expected": "2 - 2*y**2",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 auxiliary horizon b",
+      "expected": "2 - 2*y**2",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 V linear horizon",
+      "expected": "2*y**2 - 2",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 V quadratic horizon",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 auxiliary axis balance -1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 auxiliary axis normalization -1",
+      "expected": "2 - 2*x**2",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 V linear axis -1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 V quadratic axis -1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 auxiliary axis balance 1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 auxiliary axis normalization 1",
+      "expected": "2*x**2 - 2",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 V linear axis 1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 V quadratic axis 1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 declared spin-mode normalization",
+      "expected": "-16/15",
+      "status": "verified"
+    },
+    {
+      "name": "ell2 spin-linked odd growing term",
+      "expected": "-4*y/3",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 harmonic seed",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 recursion spin0",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 recursion spin1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 recursion spin2",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 u0 reflection",
+      "expected": "(x - 1)*(35*x**4*y**4 - 30*x**4*y**2 + 3*x**4 - 30*x**2*y**4 + 36*x**2*y**2 - 6*x**2 + 3*y**4 - 6*y**2 - 5)/(420*(x + 1))",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 v1 reflection",
+      "expected": "y*(x - 1)*(20*x**4*y**2 - 12*x**4 - 35*x**3*y**4 + 50*x**3*y**2 - 15*x**3 - 15*x**2*y**4 + 2*x**2*y**2 + 13*x**2 + 15*x*y**4 - 34*x*y**2 + 19*x + 3*y**4 - 6*y**2 - 5)/(210*(x + 1)**2)",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 u2 reflection",
+      "expected": "-(70*x**7*y**4 - 60*x**7*y**2 + 6*x**7 + 105*x**6*y**4 - 90*x**6*y**2 + 9*x**6 - 95*x**5*y**4 + 126*x**5*y**2 - 23*x**5 - 70*x**4*y**6 - 180*x**4*y**4 + 234*x**4*y**2 - 32*x**4 + 80*x**3*y**6 - 84*x**3*y**4 - 32*x**3*y**2 + 20*x**3 + 60*x**2*y**6 + 69*x**2*y**4 - 174*x**2*y**2 + 21*x**2 - 48*x*y**6 + 101*x*y**4 - 66*x*y**2 + 5*x - 6*y**6 - 2*y**4 + 46*y**2 + 10)/(420*(x + 1)**3)",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 horizon u0",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 horizon v1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 horizon u2",
+      "expected": "-(1 - y**2)**2*(y**2 + 1)/210",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 auxiliary horizon a",
+      "expected": "2 - 2*y**4",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 auxiliary horizon b",
+      "expected": "2 - 2*y**4",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 V linear horizon",
+      "expected": "2*y**4 - 2",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 V quadratic horizon",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 auxiliary axis balance -1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 auxiliary axis normalization -1",
+      "expected": "2 - 2*x**4",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 V linear axis -1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 V quadratic axis -1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 auxiliary axis balance 1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 auxiliary axis normalization 1",
+      "expected": "2*x**4 - 2",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 V linear axis 1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 V quadratic axis 1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 declared spin-mode normalization",
+      "expected": "-32/735",
+      "status": "verified"
+    },
+    {
+      "name": "ell4 spin-linked odd growing term",
+      "expected": "-2*y**3/21 + 2*y/35",
+      "status": "verified"
+    },
+    {
+      "name": "Stationary block removes A denominators",
+      "expected": "(-(1 - y**2)*(-a + b)**2 + (x**2 - 1)*(a*b + 1)**2)*((1 - y**2)*(a*b*(x - 1)**2 + (x + 1)**2)**2 - (x**2 - 1)*(a*(y + 1)**2 - b*(1 - y)**2)**2)",
+      "status": "verified"
+    },
+    {
+      "name": "Stationary block determinant",
+      "expected": "-sig**2*(1 - y**2)*(x**2 - 1)",
+      "status": "verified"
+    },
+    {
+      "name": "Horizon generator is null",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Horizon generator orthogonal to axial direction",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Horizon area determinant",
+      "expected": "16*sig**4*(alpha**2 + 1)**2/(1 - alpha**2)**4",
+      "status": "verified"
+    },
+    {
+      "name": "Ingoing radial pole cancellation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Horizon axis slope -1",
+      "expected": "2",
+      "status": "verified"
+    },
+    {
+      "name": "Horizon axis slope 1",
+      "expected": "-2",
+      "status": "verified"
+    },
+    {
+      "name": "Real kernel reduction",
+      "expected": "(x - 1)**2*(2*x*Derivative(U(x, y), x) - 2*y*Derivative(U(x, y), y) + (1 - y**2)*Derivative(U(x, y), (y, 2)) + (x**2 - 1)*Derivative(U(x, y), (x, 2)))/(x + 1)**2",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary kernel reduction",
+      "expected": "(x - 1)*(2*x*Derivative(W(x, y), x) - 2*y*Derivative(W(x, y), y) + (1 - y**2)*Derivative(W(x, y), (y, 2)) + (x**2 - 1)*Derivative(W(x, y), (x, 2)) - 4*Derivative(W(x, y), x))/(x + 1)",
+      "status": "verified"
+    },
+    {
+      "name": "All-ell differentiated Legendre identity",
+      "expected": "(x - 1)**2*(-ell*(ell + 1)*Derivative(leg(x), (x, 2)) + 6*x*Derivative(leg(x), (x, 3)) + (x**2 - 1)*Derivative(leg(x), (x, 4)) + 6*Derivative(leg(x), (x, 2)))",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary P2 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q2 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q2 finite horizon value",
+      "expected": "1/2",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q2 horizon derivative",
+      "expected": "-3/2",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary P3 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q3 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q3 finite horizon value",
+      "expected": "1/2",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q3 horizon derivative",
+      "expected": "-3",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary P4 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q4 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q4 finite horizon value",
+      "expected": "1/2",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q4 horizon derivative",
+      "expected": "-5",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary P5 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q5 radial equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q5 finite horizon value",
+      "expected": "1/2",
+      "status": "verified"
+    },
+    {
+      "name": "Imaginary Q5 horizon derivative",
+      "expected": "-15/2",
+      "status": "verified"
+    },
+    {
+      "name": "Exceptional radial mode rotation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Exceptional radial mode spin",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Exceptional radial mode twist constant",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Exceptional radial mode NUT",
+      "expected": "0",
+      "status": "verified"
+    }
+  ],
+  "evidence_level": "Exact linear Ernst recursion and metric regularity identities for a prescribed family; conditional finite-mode uniqueness",
+  "solutions": {
+    "2": {
+      "u0": "(x - 1)*(3*x**2*y**2 - x**2 - y**2 - 1)/(3*(x + 1))",
+      "v1": "-2*y*(x - 1)*(2*x**2 - 3*x*y**2 + 3*x - y**2 - 1)/(3*(x + 1)**2)",
+      "u2": "-(3*x**5*y**2 - x**5 + 6*x**4*y**2 - 2*x**4 - x**3*y**2 + 3*x**3 - 6*x**2*y**4 - 11*x**2*y**2 + 3*x**2 + 8*x*y**4 - 12*x*y**2 + 2*y**4 + 7*y**2 + 1)/(3*(x + 1)**3)",
+      "polynomial_boundary_data": [
+        "(3*x**2*y**2 - x**2 - 6*x*y**2 + 2*x + 5*y**2 - 3)/3",
+        "-2*y*(2*x - 3*y**2 - 3)/3",
+        "-(3*x**2*y**2 - x**2 - 3*x*y**2 + x - y**2 + 3)/3"
+      ],
+      "spin_mode_residue": "-16/15"
+    },
+    "4": {
+      "u0": "(x - 1)*(35*x**4*y**4 - 30*x**4*y**2 + 3*x**4 - 30*x**2*y**4 + 36*x**2*y**2 - 6*x**2 + 3*y**4 - 6*y**2 - 5)/(420*(x + 1))",
+      "v1": "-y*(x - 1)*(20*x**4*y**2 - 12*x**4 - 35*x**3*y**4 + 50*x**3*y**2 - 15*x**3 - 15*x**2*y**4 + 2*x**2*y**2 + 13*x**2 + 15*x*y**4 - 34*x*y**2 + 19*x + 3*y**4 - 6*y**2 - 5)/(210*(x + 1)**2)",
+      "u2": "-(70*x**7*y**4 - 60*x**7*y**2 + 6*x**7 + 105*x**6*y**4 - 90*x**6*y**2 + 9*x**6 - 95*x**5*y**4 + 126*x**5*y**2 - 23*x**5 - 70*x**4*y**6 - 180*x**4*y**4 + 234*x**4*y**2 - 32*x**4 + 80*x**3*y**6 - 84*x**3*y**4 - 32*x**3*y**2 + 20*x**3 + 60*x**2*y**6 + 69*x**2*y**4 - 174*x**2*y**2 + 21*x**2 - 48*x*y**6 + 101*x*y**4 - 66*x*y**2 + 5*x - 6*y**6 - 2*y**4 + 46*y**2 + 10)/(420*(x + 1)**3)",
+      "polynomial_boundary_data": [
+        "(35*x**4*y**4 - 30*x**4*y**2 + 3*x**4 - 70*x**3*y**4 + 60*x**3*y**2 - 6*x**3 + 40*x**2*y**4 - 24*x**2*y**2 - 10*x*y**4 - 12*x*y**2 + 6*x + 13*y**4 + 6*y**2 - 11)/420",
+        "-y*(20*x**3*y**2 - 12*x**3 - 35*x**2*y**4 - 10*x**2*y**2 + 21*x**2 + 90*x*y**4 - 48*x*y**2 - 2*x - 115*y**4 + 70*y**2 - 11)/210",
+        "-(70*x**4*y**4 - 60*x**4*y**2 + 6*x**4 - 105*x**3*y**4 + 90*x**3*y**2 - 9*x**3 + 10*x**2*y**4 + 36*x**2*y**2 - 14*x**2 - 70*x*y**6 + 35*x*y**4 - 84*x*y**2 + 31*x + 290*y**6 - 114*y**4 + 22*y**2 - 22)/420"
+      ],
+      "spin_mode_residue": "-32/735"
+    }
+  },
+  "not_established": [
+    "Pure-electric physical tidal calibration",
+    "Unrestricted global uniqueness or convergent spin series",
+    "Mixed driven solution or independent response coefficient",
+    "Novelty of this reconstruction"
+  ]
+}

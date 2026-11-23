@@ -94,7 +94,15 @@
       "url": "https://arxiv.org/html/2410.10952v2",
       "inspection": "Sections 4.1-4.2 and appendix D: aligned operator combinations",
       "audit_date_local": "2026-11-20"
+    },
+    {
+      "id": "Abdolrahimi2015",
+      "version": "arXiv:1509.01665v2, 17 December 2015",
+      "url": "https://arxiv.org/html/1509.01665v2",
+      "inspection": "Primary HTML section 2: unrescaled exact metric, harmonic seed, axis condition; coordinate normalization distinguished",
+      "audit_date_local": "2026-11-22"
     }
   ],
-  "continuation_audit_date_local": "2026-11-20"
+  "continuation_audit_date_local": "2026-11-20",
+  "construction_source_check_date_local": "2026-11-22"
 }

@@ -89,3 +89,14 @@ through 20 November. No exact matching calculation for our proposed channel
 was located. Optical-Kerr search noise and alternate operator conventions
 limit that finding; it is not a novelty certification. The April review is a
 dated scope assessment and predates the new preprint.
+
+## 22 November 2026 construction sources
+
+[Abdolrahimi, Kunz, Nedkova and Tzounis, arXiv:1509.01665v2](https://arxiv.org/html/1509.01665v2),
+section 2, supplies the explicit distorted-Kerr metric, finite harmonic seed
+formulas and axis condition. This is prior exact-solution material used for
+the [linear construction](linear-construction.md). The unrescaled metric
+convention is kept explicit. The local horizon-extension algebra is worked
+out in the note; no global regularity or physical source calibration is inferred
+from the paper's title. The known Ernst map also agrees with published Gounis
+Eq. (4.1). No new literature-priority claim is attached to the reconstruction.
