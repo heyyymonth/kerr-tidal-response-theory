@@ -20,7 +20,7 @@ python3 -m venv .venv
 git diff --check
 ```
 
-The reproduction command reruns all four symbolic calculations and compares their
+The reproduction command reruns all five symbolic calculations and compares their
 complete outputs with the saved JSON, including script hashes. It never updates
 those expected records. If an intentional scientific change invalidates them,
 explain the change, preserve its predecessor in Git, review the new calculation,

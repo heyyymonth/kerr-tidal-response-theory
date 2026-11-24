@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "completed_at_utc": "2026-11-23T01:45:45.541069+00:00",
+  "completed_at_utc": "2026-11-24T06:27:06.051988+00:00",
   "evidence_level": "reproduction of declared symbolic identities and saved evidence; no matched Love coefficient",
   "python_version": "3.11.1",
   "platform": "macOS-27.2.1-arm64-arm-64bit",
@@ -10,7 +10,7 @@
   },
   "inputs_sha256": {
     "requirements.txt": "62a66612eba47ab2843e8c22844ee6ab9e64b1a2af5c31975d56443c14d6b1ac",
-    "verify_reproduction.py": "0e229cb64c743e914af4bcdec92f95bb969d9e95de593af3fa77c249ff09b099",
+    "verify_reproduction.py": "f289995fa4cd918733a3b430e4217bf370c18cd96919e7b7d60e726b385fc3fd",
     "verify_baseline.py": "d9699678c49cbf44295a86053b01807a641b6b7c2438fb4d8f2dc864eac0f187",
     "results/baseline.json": "8fe8293160a2d018ccdd76aa8813c3b5ea1246b8adc66c4e57d53ef72783579b",
     "verify_mixed_horizon.py": "53da25cd7cb34e392036dfa47a15df8116d14061d577d51029a5136eef0e6f09",
@@ -18,7 +18,9 @@
     "verify_response_basis.py": "696b121959c8c16a7d2da184ad8aeb467ad03678025fea6c1c6d0489930b7432",
     "results/response-basis.json": "104feb989377677ee2f05af14f26b44359ccbfaddf467a27588153cbb66b3578",
     "verify_linear_drivers.py": "cb0180d4ed393888b3d42a85336878aac59c5831636e85f94a2569b1c18368be",
-    "results/linear-drivers.json": "e50b70c48b7cafc558a23d986013b8beba5f5fddc42966e02421411eaee1aa6f"
+    "results/linear-drivers.json": "e50b70c48b7cafc558a23d986013b8beba5f5fddc42966e02421411eaee1aa6f",
+    "verify_mixed_solution.py": "0bd8412b0a96c9a43aaeb4af85311d0896db771c3248192b64c02e19bf9e14b6",
+    "results/mixed-solution.json": "71c93f5c2866a392fa07931caa871efba227aab6b81c4625c86e3582962c0f49"
   },
   "comparisons": [
     {
@@ -27,7 +29,7 @@
       "vacuum_ricci_components_checked": 0,
       "complete_output_matches_saved_record": true,
       "serialized_output_matches_saved_bytes": true,
-      "elapsed_seconds": 2.719
+      "elapsed_seconds": 2.762
     },
     {
       "record": "results/mixed-horizon.json",
@@ -35,7 +37,7 @@
       "vacuum_ricci_components_checked": 16,
       "complete_output_matches_saved_record": true,
       "serialized_output_matches_saved_bytes": true,
-      "elapsed_seconds": 2.505
+      "elapsed_seconds": 2.527
     },
     {
       "record": "results/response-basis.json",
@@ -43,7 +45,7 @@
       "vacuum_ricci_components_checked": 0,
       "complete_output_matches_saved_record": true,
       "serialized_output_matches_saved_bytes": true,
-      "elapsed_seconds": 0.113
+      "elapsed_seconds": 0.117
     },
     {
       "record": "results/linear-drivers.json",
@@ -51,9 +53,17 @@
       "vacuum_ricci_components_checked": 0,
       "complete_output_matches_saved_record": true,
       "serialized_output_matches_saved_bytes": true,
-      "elapsed_seconds": 21.709
+      "elapsed_seconds": 23.274
+    },
+    {
+      "record": "results/mixed-solution.json",
+      "checks_passed": 36,
+      "vacuum_ricci_components_checked": 0,
+      "complete_output_matches_saved_record": true,
+      "serialized_output_matches_saved_bytes": true,
+      "elapsed_seconds": 8.439
     }
   ],
-  "local_markdown_file_links_checked": 105,
+  "local_markdown_file_links_checked": 128,
   "expected_scientific_records_rewritten": false
 }

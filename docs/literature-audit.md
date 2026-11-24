@@ -100,3 +100,13 @@ convention is kept explicit. The local horizon-extension algebra is worked
 out in the note; no global regularity or physical source calibration is inferred
 from the paper's title. The known Ernst map also agrees with published Gounis
 Eq. (4.1). No new literature-priority claim is attached to the reconstruction.
+
+## 23 November 2026 mixed construction check
+
+The same primary [2015 section 2](https://arxiv.org/html/1509.01665v2#S2)
+was rechecked for simultaneous even seeds. Its general formulas allow
+$c_2,c_4,c_0=-c_2-c_4$; the ordered quadratic sum in $V$ gives the factor
+$8/3$ in the cross term used in [the mixed construction](mixed-construction.md).
+The published Gounis map agrees with the two-seed substitution. The underlying
+exact family is prior work; this bounded source check makes no new novelty,
+physical calibration or independently matched-response claim.

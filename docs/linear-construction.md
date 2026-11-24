@@ -325,6 +325,11 @@ control, and no convergent all-spin theorem is asserted.
 
 ## 6. Verification and next mathematical task
 
+**23 November update:** [The mixed construction](mixed-construction.md) completes
+the driven interaction described below for these declared inputs. It adds the
+mixed boundary data and a restricted uniqueness argument; no response functional
+or physical Love coefficient has been computed.
+
 [verify_linear_drivers.py](../verify_linear_drivers.py) gives 82 exact checks of
 the map derivative, six differential equations, parity, horizon values, metric
 identities and representative kernel branches. The general kernel and analytic

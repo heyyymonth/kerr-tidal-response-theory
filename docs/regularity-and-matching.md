@@ -5,6 +5,12 @@ Venkata Hemanth Athota · Learning and proof-obligation note · 13 November 2026
 This note explains the next step. It does not solve the mixed Kerr problem.
 The established calculations and their limits are in [CLAIMS.md](../CLAIMS.md).
 
+**23 November continuation:** [Mixed construction](mixed-construction.md) now
+solves the driven mathematical problem for the chosen linear fields through
+spin squared. It exhibits a regular nonzero interaction and nonzero coordinate
+tails, with a proof of uniqueness for complete declared data. The distinction
+between forced deformation and an independently defined response remains.
+
 **22 November continuation:** [Linear construction](linear-construction.md)
 now implements a mathematical regularity problem for two declared driver
 families. The original pure-electric matching problem below is a distinct
@@ -187,9 +193,9 @@ Their results do not supply the missing rotating calculation here.
 | Required ingredient | What must be established | Current status |
 |---|---|---|
 | Response definition | Specify the spin-dependent tidal operator basis and its independent structures before imposing alignment; identify the combination probed by the aligned mass quadrupole. | Three algebraic scalars and their aligned combination derived in the continuation; full EFT reduction unresolved. No coefficient value assigned. |
-| External data and parameters | Define $\eta_2,\eta_4$, mass/spin labels and their perturbative shifts, time and azimuthal normalization, and which other applied moments vanish. | Proposed sector only. |
-| Boundary conditions | Give regular horizon/axis conditions for the full reconstructed metric, including gauge and parameter modes. | Not constructed for the mixed Kerr problem. |
-| Driven solution | Obtain both linear tidal solutions and all lower spin orders needed by the mixed source. Solve the real-linear Ernst system. | Source identity derived; solutions not computed. |
+| External data and parameters | Define $\eta_2,\eta_4$, mass/spin labels and their perturbative shifts, time and azimuthal normalization, and which other applied moments vanish. | Mathematical seed and boundary data now specified; physical calibration remains open. |
+| Boundary conditions | Give regular horizon/axis conditions for the full reconstructed metric, including gauge and parameter modes. | Constructed for the declared mathematical family in [the mixed note](mixed-construction.md); not yet calibrated to pure-electric physical data. |
+| Driven solution | Obtain both linear tidal solutions and all lower spin orders needed by the mixed source. Solve the real-linear Ernst system. | Both linear fields and their driven mixed solution constructed through spin squared for the declared data. |
 | Matching | Compute the reference EFT contribution, map fields/gauges, and extract the identifiable response combination. | Not performed. |
 | Interpretation | Check the Schwarzschild limit against published matching and audit novelty for the final defined channel. | Foundational literature checked; channel-specific novelty unresolved. |
 
@@ -205,6 +211,7 @@ equation is then
 
 Thus the lower spin orders cannot simply be skipped. Coordinate dependence of
 the prolate scale must also be accounted for when defining this expansion. This
-is coefficient bookkeeping, not an executed calculation. The next research
-deliverable is a response definition and matching prescription that makes the
-conjecture testable. A matched nonzero result is as admissible as a vanishing proof.
+recursion has now been executed for the mathematical seed family, as recorded
+in [the mixed construction](mixed-construction.md). A response functional must
+still be specified independently of its value, with physical matching a later
+task. A consistently defined nonzero result is as admissible as a vanishing proof.

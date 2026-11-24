@@ -104,5 +104,10 @@
     }
   ],
   "continuation_audit_date_local": "2026-11-20",
-  "construction_source_check_date_local": "2026-11-22"
+  "construction_source_check_date_local": "2026-11-22",
+  "mixed_construction_source_check": {
+    "audit_date_local": "2026-11-23",
+    "sources": ["Abdolrahimi2015", "Gounis2025"],
+    "inspection": "Primary 2015 section 2 permits simultaneous even seeds with c0=-c2-c4; V ordered double sum gives 8/3 cross coefficient. Published Gounis Eq. (4.1) agrees with the two-seed Ernst map. No novelty claim."
+  }
 }

@@ -14,9 +14,10 @@ url: 'https://github.com/heyyymonth/kerr-tidal-response-theory'
 license: MIT
 abstract: >-
   Analytical notes and reproducible symbolic checks of the stationary
-  axisymmetric Ernst equation and a conditional mixed-quadrupole curvature
-  obstruction. The proposed mixed quadrupole-hexadecapole response at quadratic
-  spin order remains undefined by a completed matching calculation and unsolved.
+  axisymmetric Ernst equation, a conditional mixed-quadrupole curvature
+  obstruction, and explicit linear and mixed constructions through spin squared
+  for declared mathematical boundary data. The independently matched physical
+  quadrupole-hexadecapole response remains uncomputed.
 keywords:
   - general relativity
   - Kerr black holes

@@ -32,7 +32,8 @@ synced parent `sources/` file was modified or imported as Kerr evidence.
 | [baseline.json](results/baseline.json), [mixed-horizon.json](results/mixed-horizon.json) | Inherited deterministic scientific records; retained unchanged at publication. |
 | [verify_response_basis.py](verify_response_basis.py), [response-basis.json](results/response-basis.json) | 20 November continuation: 33 exact STF, response-normalization and harmonic-coordinate checks; no physical coefficient value. |
 | [verify_linear_drivers.py](verify_linear_drivers.py), [linear-drivers.json](results/linear-drivers.json) | 22 November continuation: 82 exact linear recursion, metric identity, boundary normalization and kernel checks. |
-| [verify_reproduction.py](verify_reproduction.py) | Read-only comparison of all four fresh complete outputs, pinned package versions, and script/result hashes; also checks local Markdown file targets. |
+| [verify_mixed_solution.py](verify_mixed_solution.py), [mixed-solution.json](results/mixed-solution.json) | 23 November continuation: 36 exact mixed-map, forced-equation, angular, boundary and regularity-identity checks. |
+| [verify_reproduction.py](verify_reproduction.py) | Read-only comparison of all five fresh complete outputs, pinned package versions, and script/result hashes; also checks local Markdown file targets. |
 | [reproduction.json](results/reproduction.json) | Fresh execution receipt with actual time, interpreter, platform, package versions, input hashes, and comparisons. |
 
 Run with Python 3.11:
@@ -45,13 +46,13 @@ python3 -m venv .venv
 ```
 
 The default command never writes results. To retain a new execution receipt,
-use `--report tmp/reproduction.json`. This option cannot target either expected
-scientific record. The two original scripts' `--write` options deliberately
+use `--report tmp/reproduction.json`. This option cannot target any expected
+scientific record. The calculation scripts' `--write` options deliberately
 regenerate expected records and should be used only for a reviewed scientific
 change, as described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 The CI workflow installs the same pinned SymPy and mpmath versions in a fresh
-Python 3.11 environment, checks dependencies, reruns all four calculations, checks
+Python 3.11 environment, checks dependencies, reruns all five calculations, checks
 local file links, and uploads its execution receipt. Actions are pinned to
 verified commit SHAs. The receipt records the actual Python patch version;
 the entire operating system and Python build are not frozen. Dependency pins
@@ -81,7 +82,7 @@ coefficient. The original scripts and two expected records remain unchanged.
 The execution receipt is refreshed for the expanded collection; the earlier
 receipt remains available in Git history. No third-party paper is distributed.
 
-## Literature and rights
+## Linear and mixed construction continuation
 
 The 22 November [linear-construction note](docs/linear-construction.md) uses the
 known distorted-Kerr metric and Ernst map with explicitly chosen seed and
@@ -93,6 +94,21 @@ published Gounis Eq. (4.1) was checked in the saved published text, and
 Abdolrahimi et al. arXiv:1509.01665v2 section 2 was read in primary HTML.
 Its later rescaled coordinate/charge conventions are not silently imported.
 No pure-electric physical source map or new Love coefficient is claimed.
+
+On 23 November 2026, the same known family was differentiated in both even
+seed amplitudes. The [mixed note](docs/mixed-construction.md) states the
+resulting forced solution, full mixed exterior data, local metric extension,
+and finite-mode uniqueness assumptions. All three forced equations vanish
+identically under direct differential substitution. Independent AI-assisted
+derivation and review agreed on the fields, spin residue, horizon values and
+quadrupolar projections. The nonzero decaying coordinate terms are explicitly
+distinguished from independent response. This review is not peer review.
+The four older deterministic records are unchanged; the expanded reproduction
+receipt covers 217 checks/components. The extra quadratic term in the exact
+metric potential was checked against the primary 2015 source's ordered double
+sum, including both cross terms. No third-party paper is redistributed.
+
+## Literature and rights
 
 [sources.json](provenance/sources.json) records versioned source locations,
 inspection scope and available download hashes. The

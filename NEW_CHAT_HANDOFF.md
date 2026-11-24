@@ -4,6 +4,17 @@
 
 Prepared for Venkata Hemanth Athota on 13 November 2026. This is a continuation brief, not a manuscript or a claim of scientific novelty.
 
+**23 November continuation:** the repository is published and the mathematical
+[linear](docs/linear-construction.md) and [mixed](docs/mixed-construction.md)
+solutions through spin squared are constructed for explicit solution-generating
+boundary data. Reproduction now covers five calculations, 217 checks/components.
+The mixed field has nonzero coordinate tails; no independent response has been
+computed. Resume by defining a quadrupolar mathematical response functional
+without choosing a reference merely to force zero. The user's emphasis is
+mathematical proof with physical interpretation; full physical matching is a
+later task. Read the current notes and claim/evidence table before the historical
+instructions below. Existing authorship and repository-separation constraints persist.
+
 ## User objective
 
 Continue a proof-centered investigation in classical general relativity, while teaching the user the physics and mathematics step by step. Create a separate, public, reproducible research repository modeled on the useful practices of `heyyymonth/black-hole-recoil-dynamics`. Preserve the reasoning that led here, including what earlier work established, why it does not settle this problem, and which mathematical shortcuts were rejected.
