@@ -138,14 +138,14 @@ branch, while accounting for the nonzero source.
 To make the reference solution explicit without importing the answer, set
 
 ```math
-R_*(F)(x)=P(x)\int_2^x\frac{J(F)(s)}{(s^2-1)P(s)^2}\,ds.
+R_{\ast}(F)(x)=P(x)\int_2^x\frac{J(F)(s)}{(s^2-1)P(s)^2}\,ds.
 ```
 
 Since $P>0$ on $x>1$, this reference is well defined there, obeys
-$\mathcal L_2R_*=F$ and has $C[R_*]=J[F]$. Every solution therefore has
+$\mathcal L_2R_{\ast}=F$ and has $C[R_{\ast}]=J[F]$. Every solution therefore has
 
 ```math
-R=R_*(F)+AP+b_F[R]Q.
+R=R_{\ast}(F)+AP+b_F[R]Q.
 ```
 
 The base point 2 sets a growing-branch normalization. Moving it changes only
