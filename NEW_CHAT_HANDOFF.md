@@ -4,6 +4,17 @@
 
 Prepared for Venkata Hemanth Athota on 13 November 2026. This is a continuation brief, not a manuscript or a claim of scientific novelty.
 
+**24 November continuation:** [The radial response note](docs/radial-response.md)
+isolates the quadrupolar forced Legendre equation. A source-only primitive with
+zero finite part at infinity defines a connection coefficient that is zero at
+spin zero and -16172/218295 at spin squared. Source/horizon and direct-solution
+derivations agree. Alternative subtractions give different values while
+preserving homogeneous calibration and the static zero. This does not settle
+the independently matched conjecture. Reproduction now covers six calculations,
+262 checks/components. Resume by examining additional normalization structure
+or subtraction-invariant differences; do not relabel the conditional number
+as a canonical response or physical Love coefficient.
+
 **23 November continuation:** the repository is published and the mathematical
 [linear](docs/linear-construction.md) and [mixed](docs/mixed-construction.md)
 solutions through spin squared are constructed for explicit solution-generating

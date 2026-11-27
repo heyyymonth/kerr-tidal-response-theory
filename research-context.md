@@ -4,7 +4,7 @@ Venkata Hemanth Athota · Research and learning context · 13 November 2026
 
 This record preserves the scientific question, earlier work, reasons for narrowing the approach, and the limits of the current evidence. It accompanies the technical [starting equations](README.md) and [horizon-curvature calculation](mixed-horizon.md). It is a learning and continuity record, not a manuscript or a claim of a completed new theorem.
 
-**Current direction, 23 November 2026:** the user explicitly prioritized a
+**Current direction, 24 November 2026:** the user explicitly prioritized a
 mathematical problem with physical interpretation. The immediate deliverables
 are constructions, boundary conditions, and proofs; physical EFT matching is a
 later interpretation task rather than a prerequisite for every mathematical
@@ -13,12 +13,16 @@ six Ernst functions through spin squared, a local metric extension argument,
 and restricted uniqueness for fully specified boundary data. Those data contain
 spin-linked odd growing modes. [The mixed construction](docs/mixed-construction.md)
 now supplies their regular driven interaction through spin squared, its complete
-boundary data, and a restricted uniqueness proof. Its 36 new checks bring the
-collection to 217 checks/components. The mixed field and raw quadrupolar tails
-are nonzero, without identifying an independent response. Next isolate the
-quadrupolar radial problem and define its response functional independently of
-the answer. This family has not been identified with the original pure-electric
-physical conjecture. The historical discussion below retains the earlier stages.
+boundary data, and a restricted uniqueness proof. The [radial note](docs/radial-response.md)
+then defines a source-only finite-part connection coefficient, giving zero at
+spin zero and -16172/218295 at spin squared. Its 45 checks bring the collection
+to 262 checks/components. A source-and-horizon derivation agrees with direct
+evaluation, while alternative subtractions change the value. No preferred
+invariant response or physical Love coefficient is identified. Next determine
+what additional structure could justify an absolute normalization, or formulate
+the result using subtraction-invariant differences. This family has not been
+identified with the original pure-electric physical conjecture. The historical
+discussion below retains the earlier stages.
 
 **Continuation, 20 November 2026:** [The response-definition note](docs/response-definition.md)
 now resolves the three-scalar algebraic sector and the single combination

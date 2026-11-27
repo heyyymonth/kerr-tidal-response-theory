@@ -33,7 +33,8 @@ synced parent `sources/` file was modified or imported as Kerr evidence.
 | [verify_response_basis.py](verify_response_basis.py), [response-basis.json](results/response-basis.json) | 20 November continuation: 33 exact STF, response-normalization and harmonic-coordinate checks; no physical coefficient value. |
 | [verify_linear_drivers.py](verify_linear_drivers.py), [linear-drivers.json](results/linear-drivers.json) | 22 November continuation: 82 exact linear recursion, metric identity, boundary normalization and kernel checks. |
 | [verify_mixed_solution.py](verify_mixed_solution.py), [mixed-solution.json](results/mixed-solution.json) | 23 November continuation: 36 exact mixed-map, forced-equation, angular, boundary and regularity-identity checks. |
-| [verify_reproduction.py](verify_reproduction.py) | Read-only comparison of all five fresh complete outputs, pinned package versions, and script/result hashes; also checks local Markdown file targets. |
+| [verify_radial_response.py](verify_radial_response.py), [radial-response.json](results/radial-response.json) | 24 November continuation: 45 exact radial, primitive, horizon, Frobenius and subtraction-convention checks. |
+| [verify_reproduction.py](verify_reproduction.py) | Read-only comparison of all six fresh complete outputs, pinned package versions, and script/result hashes; also checks local Markdown file targets. |
 | [reproduction.json](results/reproduction.json) | Fresh execution receipt with actual time, interpreter, platform, package versions, input hashes, and comparisons. |
 
 Run with Python 3.11:
@@ -52,7 +53,7 @@ regenerate expected records and should be used only for a reviewed scientific
 change, as described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 The CI workflow installs the same pinned SymPy and mpmath versions in a fresh
-Python 3.11 environment, checks dependencies, reruns all five calculations, checks
+Python 3.11 environment, checks dependencies, reruns all six calculations, checks
 local file links, and uploads its execution receipt. Actions are pinned to
 verified commit SHAs. The receipt records the actual Python patch version;
 the entire operating system and Python build are not frozen. Dependency pins
@@ -109,6 +110,18 @@ metric potential was checked against the primary 2015 source's ordered double
 sum, including both cross terms. No third-party paper is redistributed.
 
 ## Literature and rights
+
+The [24 November radial note](docs/radial-response.md) constructs a finite-part
+primitive from source data alone, before evaluating the regular solution. Its
+nonzero spin-squared connection coefficient is independently recovered from
+source data and horizon smoothness. Two AI-assisted derivations agreed on
+the value and subtraction ambiguity; a separate run reproduced all 45 new
+checks and the complete saved output. This is not peer review. The five older
+deterministic records remain unchanged, and the updated receipt covers 262
+checks/components. Standard Legendre identities were checked directly, with
+NIST DLMF section 14.2 as a mathematical reference. Gralla's convention analysis
+provides context, not this calculation's numerical value or a current novelty
+verdict. No physically matched Love coefficient is claimed.
 
 [sources.json](provenance/sources.json) records versioned source locations,
 inspection scope and available download hashes. The

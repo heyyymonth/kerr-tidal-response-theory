@@ -285,6 +285,11 @@ every decaying term a response does not supply one.
 
 ## 7. Evidence and next step
 
+**24 November update:** [The radial reduction](radial-response.md) executes the
+next step below. It defines and evaluates a source-only finite-part connection
+coefficient, and demonstrates its dependence on subtraction conventions.
+No preferred invariant or physically matched response is established.
+
 [verify_mixed_solution.py](../verify_mixed_solution.py) supplies 36 exact checks:
 the rational map expansion and amplitude derivatives, all three forced
 equations, parity, boundary splits, angular reconstructions, horizon values,

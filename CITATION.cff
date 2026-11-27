@@ -16,8 +16,9 @@ abstract: >-
   Analytical notes and reproducible symbolic checks of the stationary
   axisymmetric Ernst equation, a conditional mixed-quadrupole curvature
   obstruction, and explicit linear and mixed constructions through spin squared
-  for declared mathematical boundary data. The independently matched physical
-  quadrupole-hexadecapole response remains uncomputed.
+  for declared mathematical boundary data, with a subtraction-dependent radial
+  connection coefficient. The independently matched physical quadrupole-hexadecapole
+  response remains uncomputed.
 keywords:
   - general relativity
   - Kerr black holes

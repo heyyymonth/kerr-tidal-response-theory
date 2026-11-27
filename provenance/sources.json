@@ -96,6 +96,12 @@
       "audit_date_local": "2026-11-20"
     },
     {
+      "id": "DLMFLegendre",
+      "url": "https://dlmf.nist.gov/14.2",
+      "inspection": "Standard Legendre differential equation and Wronskian framework; explicit Q2 convention independently checked in the calculation",
+      "audit_date_local": "2026-11-24"
+    },
+    {
       "id": "Abdolrahimi2015",
       "version": "arXiv:1509.01665v2, 17 December 2015",
       "url": "https://arxiv.org/html/1509.01665v2",
@@ -105,6 +111,11 @@
   ],
   "continuation_audit_date_local": "2026-11-20",
   "construction_source_check_date_local": "2026-11-22",
+  "radial_response_source_check": {
+    "audit_date_local": "2026-11-24",
+    "sources": ["DLMFLegendre", "Gralla2018"],
+    "inspection": "DLMF standard Legendre framework and Gralla section 3 convention distinctions; neither source supplies the computed connection coefficient or a current channel-novelty verdict."
+  },
   "mixed_construction_source_check": {
     "audit_date_local": "2026-11-23",
     "sources": ["Abdolrahimi2015", "Gounis2025"],

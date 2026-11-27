@@ -110,3 +110,14 @@ $8/3$ in the cross term used in [the mixed construction](mixed-construction.md).
 The published Gounis map agrees with the two-seed substitution. The underlying
 exact family is prior work; this bounded source check makes no new novelty,
 physical calibration or independently matched-response claim.
+
+## 24 November 2026 radial conventions
+
+[NIST DLMF section 14.2](https://dlmf.nist.gov/14.2) supplies the standard
+Legendre equation and Wronskian framework; the explicit exterior degree-two
+branches and their normalization are checked directly in
+[the radial note](radial-response.md). [Gralla, arXiv:1710.11096v3](https://arxiv.org/html/1710.11096v3#S3),
+section 3, distinguishes coordinate and reference-solution choices. It is
+context for our explicit subtraction comparison, not a source for the new
+conditional coefficient or an assertion about the present status of matching.
+No additional channel-novelty claim is made.

@@ -1,0 +1,308 @@
+{
+  "script_sha256": "84acbb2c4303fab86faa3a4420f71ab787e8579311223c8bd69d8d3940bfa723",
+  "sympy_version": "1.11.1",
+  "checks_passed": 45,
+  "checks": [
+    {
+      "name": "Growing Legendre branch equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Decaying Legendre branch equation",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Growing branch flux",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "Decaying branch Wronskian normalization",
+      "expected": "-1",
+      "status": "verified"
+    },
+    {
+      "name": "Q2 asymptotic normalization",
+      "expected": "2/15",
+      "status": "verified"
+    },
+    {
+      "name": "Arbitrary-function Lagrange identity",
+      "expected": "(3*x**2/2 - 1/2)*(2*x*Derivative(r(x), x) + (x**2 - 1)*Derivative(r(x), (x, 2)) - 6*r(x))",
+      "status": "verified"
+    },
+    {
+      "name": "Real quadrupolar operator reduction",
+      "expected": "(x - 1)**2*(3*y**2/2 - 1/2)*(2*x*Derivative(r(x), x) + (x**2 - 1)*Derivative(r(x), (x, 2)) - 6*r(x))/(x + 1)**2",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 projected forced equation",
+      "expected": "32*x**2*(27*x**4 - 26*x**2 + 3)/6615",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 source simple-pole residue -1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 source simple-pole residue 1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 source-only primitive derivative",
+      "expected": "32*x**2*(3*x**2/2 - 1/2)*(27*x**4 - 26*x**2 + 3)/6615",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 primitive zero finite part",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 flux source identity",
+      "expected": "32*x**2*(3*x**2/2 - 1/2)*(27*x**4 - 26*x**2 + 3)/6615",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 connection coefficient",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 asymptotic extraction",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 homogeneous additions",
+      "expected": "bb",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 source fixes horizon pole",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 source and horizon derive response",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 finite projected Ernst horizon value",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 Frobenius compatibility n=2",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 Frobenius compatibility n=-3",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 Laurent-reference coefficient",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 flux coefficient formula",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 independent Frobenius reference through x^-7",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin0 source-dependent subtraction shift",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 projected forced equation",
+      "expected": "-32*(2673*x**11 + 3267*x**10 - 4554*x**9 - 8127*x**8 - 2781*x**7 + 9673*x**6 + 10671*x**5 - 11853*x**4 - 8168*x**3 + 11280*x**2 + 2175*x - 4800)/(218295*(x - 1)**2*(x + 1)**3)",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 source simple-pole residue -1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 source simple-pole residue 1",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 source-only primitive derivative",
+      "expected": "-32*(3*x**2/2 - 1/2)*(2673*x**11 + 3267*x**10 - 4554*x**9 - 8127*x**8 - 2781*x**7 + 9673*x**6 + 10671*x**5 - 11853*x**4 - 8168*x**3 + 11280*x**2 + 2175*x - 4800)/(218295*(x - 1)**2*(x + 1)**3)",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 primitive zero finite part",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 flux source identity",
+      "expected": "-32*(3*x**2/2 - 1/2)*(2673*x**11 + 3267*x**10 - 4554*x**9 - 8127*x**8 - 2781*x**7 + 9673*x**6 + 10671*x**5 - 11853*x**4 - 8168*x**3 + 11280*x**2 + 2175*x - 4800)/(218295*(x - 1)**2*(x + 1)**3)",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 connection coefficient",
+      "expected": "-16172/218295",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 asymptotic extraction",
+      "expected": "-16172/218295",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 homogeneous additions",
+      "expected": "bb - 16172/218295",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 source fixes horizon pole",
+      "expected": "1088/218295",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 source and horizon derive response",
+      "expected": "-16172/218295",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 finite projected Ernst horizon value",
+      "expected": "544/218295",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 Frobenius compatibility n=2",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 Frobenius compatibility n=-3",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 Laurent-reference coefficient",
+      "expected": "-1184/14553",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 flux coefficient formula",
+      "expected": "-16172/218295",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 independent Frobenius reference through x^-7",
+      "expected": "0",
+      "status": "verified"
+    },
+    {
+      "name": "spin2 source-dependent subtraction shift",
+      "expected": "1088*lambda/218295 - 16172/218295",
+      "status": "verified"
+    },
+    {
+      "name": "Horizon flux finite part with forced pole and logarithm",
+      "expected": "2*logc - 13*pole",
+      "status": "verified"
+    },
+    {
+      "name": "Shifted-coordinate finite part diagnostic",
+      "expected": "2944/43659",
+      "status": "verified"
+    }
+  ],
+  "evidence_level": "Exact quadrupolar reduction and source-only finite-part connection coefficient in fixed coordinates; subtraction dependent",
+  "definition": "b=J[F]-(x^2-1)(P2 R'-P2' R), J'=P2 F, FP_infinity J=0, R=Pi2(w)/f",
+  "sectors": {
+    "0": {
+      "radial_solution": "8*x**6/2205 - 8*x**4/6615 - 8*x**2/441 + 8/1323",
+      "radial_source": "32*x**6/245 - 832*x**4/6615 + 32*x**2/2205",
+      "source_only_primitive": "16*x**9/735 - 16*x**7/441 + 16*x**5/945 - 16*x**3/6615",
+      "flux": "16*x**9/735 - 16*x**7/441 + 16*x**5/945 - 16*x**3/6615",
+      "finite_part_connection_coefficient": "0",
+      "horizon_forced_pole": "0",
+      "horizon_primitive_finite_part": "0",
+      "reference_horizon_log_coefficient": "0",
+      "laurent_reference_coefficient": "0",
+      "laurent_reference_coefficients": {
+        "6": "8/2205",
+        "5": "0",
+        "4": "-8/6615",
+        "3": "0",
+        "2": "0",
+        "1": "0",
+        "0": "0",
+        "-1": "0",
+        "-2": "0",
+        "-3": "0",
+        "-4": "0",
+        "-5": "0",
+        "-6": "0",
+        "-7": "0"
+      },
+      "selected_solution_laurent_coefficients": {
+        "2": "-8/441",
+        "1": "0",
+        "-1": "0",
+        "-3": "0"
+      }
+    },
+    "2": {
+      "radial_solution": "-8*x**6/735 - 8*x**5/2205 - 8*x**4/315 + 256*x**3/8085 - 4504*x**2/218295 + 32024*x/218295 - 15352/218295 - 512/(24255*(x + 1)) - 64/(24255*(x + 1)**2) + 1088/(218295*(x - 1))",
+      "radial_source": "-96*x**6/245 - 64*x**5/735 - 64*x**4/2205 + 6368*x**3/24255 + 32*x**2/105 - 24224*x/31185 + 20224/43659 + 1024/(8085*(x + 1)) + 256/(4851*(x + 1)**2) + 512/(24255*(x + 1)**3) - 2176/(72765*(x - 1)) + 2176/(218295*(x - 1)**2)",
+      "source_only_primitive": "-16*x**9/245 - 4*x**8/245 + 16*x**7/735 + 1768*x**6/24255 + 208*x**5/2205 - 2144*x**4/6615 + 39472*x**3/218295 + 58232*x**2/218295 - 16256*x/43659 + 256/(24255*(x + 1)) - 256/(24255*(x + 1)**2) - 2176/(218295*(x - 1))",
+      "flux": "-16*x**9/245 - 4*x**8/245 + 16*x**7/735 + 1768*x**6/24255 + 208*x**5/2205 - 2144*x**4/6615 + 39472*x**3/218295 + 58232*x**2/218295 - 16256*x/43659 + 16172/218295 + 256/(24255*(x + 1)) - 256/(24255*(x + 1)**2) - 2176/(218295*(x - 1))",
+      "finite_part_connection_coefficient": "-16172/218295",
+      "horizon_forced_pole": "1088/218295",
+      "horizon_primitive_finite_part": "-2756/19845",
+      "reference_horizon_log_coefficient": "-8086/218295",
+      "laurent_reference_coefficient": "-1184/14553",
+      "laurent_reference_coefficients": {
+        "6": "-8/735",
+        "5": "-8/2205",
+        "4": "-8/315",
+        "3": "256/8085",
+        "2": "0",
+        "1": "32024/218295",
+        "0": "-10112/130977",
+        "-1": "-64/3969",
+        "-2": "1024/43659",
+        "-3": "0",
+        "-4": "3968/218295",
+        "-5": "5696/1528065",
+        "-6": "256/19845",
+        "-7": "11392/1528065"
+      },
+      "selected_solution_laurent_coefficients": {
+        "2": "-4504/218295",
+        "1": "32024/218295",
+        "-1": "-64/3969",
+        "-3": "-2368/218295"
+      }
+    }
+  },
+  "not_established": [
+    "Canonical response independent of subtraction or coordinates",
+    "Physical Love coefficient",
+    "Pure-electric tidal calibration",
+    "Disproof of the independently matched vanishing conjecture"
+  ]
+}

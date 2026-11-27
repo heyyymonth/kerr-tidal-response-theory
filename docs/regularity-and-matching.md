@@ -5,6 +5,12 @@ Venkata Hemanth Athota · Learning and proof-obligation note · 13 November 2026
 This note explains the next step. It does not solve the mixed Kerr problem.
 The established calculations and their limits are in [CLAIMS.md](../CLAIMS.md).
 
+**24 November continuation:** [Radial response convention](radial-response.md)
+now defines a mathematical connection coefficient using only the forced source
+for its subtraction. Its spin-squared value is nonzero, while an alternative
+subtraction changes it. This conditional result is distinct from the physical
+matching problem explained below.
+
 **23 November continuation:** [Mixed construction](mixed-construction.md) now
 solves the driven mathematical problem for the chosen linear fields through
 spin squared. It exhibits a regular nonzero interaction and nonzero coordinate
@@ -212,6 +218,7 @@ equation is then
 Thus the lower spin orders cannot simply be skipped. Coordinate dependence of
 the prolate scale must also be accounted for when defining this expansion. This
 recursion has now been executed for the mathematical seed family, as recorded
-in [the mixed construction](mixed-construction.md). A response functional must
-still be specified independently of its value, with physical matching a later
-task. A consistently defined nonzero result is as admissible as a vanishing proof.
+in [the mixed construction](mixed-construction.md). The [radial note](radial-response.md)
+now evaluates one explicitly normalized mathematical connection coefficient.
+A preferred invariant normalization remains unresolved, with physical matching
+a later task. A consistently defined nonzero result is as admissible as a vanishing proof.

@@ -1,10 +1,10 @@
 # Claims and evidence
 
-Updated 23 November 2026. A passing algebra check is not a matched-response
+Updated 24 November 2026. A passing algebra check is not a matched-response
 calculation. The unchanged foundation contains 32 baseline checks, 18 curvature
 checks, and 16 Ricci-component checks. Separate records add 33 response-basis
 and 82 linear-construction checks. The mixed construction adds 36 checks,
-for 217 checks/components in total.
+and the radial reduction adds 45 checks, for 262 checks/components in total.
 
 | Statement | Status and supporting evidence | Boundary of the claim |
 |---|---|---|
@@ -27,6 +27,9 @@ for 217 checks/components in total.
 | The driven mixed solution is explicit through spin squared and regular in the known metric family. | Three exact forced PDE residuals, map derivatives and additional metric-potential identities in [verify_mixed_solution.py](verify_mixed_solution.py); [construction and extension proof](docs/mixed-construction.md). | No independently added mixed seed; prescribed mixed data, local small-amplitude compact exterior. No new full exact Ricci calculation. |
 | The mixed coefficients are unique for identical linear drivers and complete declared mixed data. | Homogeneous-difference argument in [mixed-construction.md](docs/mixed-construction.md#5-restricted-uniqueness). | Finite angular modes, common smooth horizon chart, fixed rod/gauge and exceptional residue. Regularity alone does not choose mixed exterior data. |
 | The constructed mixed potential has nonzero quadrupolar decaying coordinate terms. | Exact projections and raw inverse-power coefficients in [mixed-solution.json](results/mixed-solution.json). | These terms do not identify independent homogeneous response or a Love coefficient. |
+| The quadrupolar equation admits a source-only finite-part reference and a radius-independent connection coefficient. | Exact radial equations, Wronskian identity and primitive construction in [radial-response.md](docs/radial-response.md); [45 checks](results/radial-response.json). | Fixed prolate coordinate, reduced field variable, Legendre normalization and subtraction rule. |
+| That coefficient is zero at spin zero and -16172/218295 at spin squared. | Independent source-and-horizon derivation agrees with direct evaluation in [verify_radial_response.py](verify_radial_response.py). | Conditional mathematical value, not a physical Love coefficient or canonical absolute response. |
+| Homogeneous-branch calibration and a static zero do not uniquely fix the sourced coefficient. | A second Frobenius prescription and explicit source-dependent shifts in the radial note and saved record. | Changing the subtraction changes the coefficient, not the already fixed regular solution. Same-source differences cancel this additive ambiguity. |
 | The aligned order eta_2 eta_4 chi^2 mass-quadrupole response vanishes. | **Conjecture only.** An algebraic projection and normalization are now defined. | Full EFT closure, physical source map, the corresponding physically calibrated boundary solution and external matching remain unresolved. |
 | This particular mixed Kerr channel is novel. | **Not established.** A bounded primary-source audit found a broader documented gap. | Search non-detection is not proof of priority or completeness. |
 | The inherited evidence can be reproduced. | [verify_reproduction.py](verify_reproduction.py) and [reproduction.json](results/reproduction.json). | Reproduction checks identities and record integrity, not physical calibration or scientific peer review. |
