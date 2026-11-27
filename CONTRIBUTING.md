@@ -3,7 +3,7 @@
 The objective is a proof or a consistently matched counterexample in a precisely
 defined nonlinear Kerr tidal sector. Do not assume vanishing. Begin with
 [research-context.md](research-context.md), [CLAIMS.md](CLAIMS.md), and
-[the matching obligations](docs/regularity-and-matching.md).
+[the verification map](docs/verification.md).
 
 State conventions, units, boundary conditions, expansion orders, and source
 versions. Distinguish an exact identity, a conditional argument, a published
@@ -17,6 +17,7 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python -m pip check
 .venv/bin/python verify_reproduction.py
+.venv/bin/python verify_formal_transcription.py
 git diff --check
 ```
 
@@ -27,6 +28,10 @@ explain the change, preserve its predecessor in Git, review the new calculation,
 and only then regenerate the relevant JSON with the original script's `--write`.
 Update the claim and provenance records as appropriate. Do not change expected
 values simply to make a failed check pass.
+
+When changing formal statements or their dependencies, run the
+[Lean build and axiom audit](formal/README.md). Review the theorem statement
+against the mathematical note as well as checking that the proof compiles.
 
 Use the published Gounis--Kehagias--Riotto paper for its equation numbers. Record
 primary sources and actual version status; no DOI, priority, or peer-review claim

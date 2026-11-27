@@ -2,20 +2,16 @@
 
 Venkata Hemanth Athota · 22 November 2026
 
-The immediate objective is mathematical: construct solutions and prove their
-properties under explicit boundary data. Physical language explains those data;
-identification with a measured or EFT-defined Love coefficient is a later task.
+We construct six rational Ernst perturbation functions for two tidal drivers
+through spin squared. They satisfy the linearized equations identically. A
+metric reconstruction establishes local horizon and axis smoothness, and a
+separated Schwarzschild kernel argument gives uniqueness in a finite-mode class
+with the stated growing data, parameter choices and gauge fixed.
 
-**Result.** We give six explicit rational Ernst perturbation functions for two
-solution-generating drivers through spin squared. Their linearized equations
-vanish identically. An accompanying metric argument proves local horizon and
-axis smoothness for the chosen family. A separated Schwarzschild kernel argument
-proves uniqueness of the formal coefficients in a specified finite-mode class
-when all the displayed growing data and parameter/gauge conventions are fixed.
-
-The boundary prescription includes spin-linked odd angular terms. It is not a
-proof that a purely electric external field with every independent magnetic
-moment zero has been constructed. No mixed response coefficient is computed.
+The boundary data include spin-linked odd angular terms. Identifying these
+solutions with purely electric external tides whose independent magnetic
+moments vanish requires a further calibration. This note constructs the linear
+fields; it assigns no mixed response coefficient or physical Love number.
 
 ## 1. Fixed domain and mathematical normalization
 
@@ -54,7 +50,7 @@ The factor $k^\ell$ fixes the leading solid harmonic measured in units of $M$.
 Subtracting one sets $U(1,\pm1)=0$ at both horizon poles; it is an explicit
 constant-potential/time-normalization convention. The constants $N_\ell$
 agree with the earlier linear STF Taylor convention, but $\epsilon_\ell$ is
-a mathematical seed amplitude and is not silently equated to a fully matched
+a mathematical seed amplitude that has not been identified with a fully matched
 physical tidal moment. The label $\ell$ specifies the zero-spin driver, not
 every angular component at nonzero spin.
 
@@ -63,7 +59,7 @@ every angular component at nonzero spin.
 We use the known distorted-Kerr solution-generating map, as recorded in
 [Gounis et al., published Eq. (4.1)](https://doi.org/10.1088/1475-7516/2025/03/002)
 and the metric in [Abdolrahimi et al., section 2](https://arxiv.org/html/1509.01665v2).
-The map is prior work. Define
+Define
 
 ```math
 A_\ell=2(x-y)\sum_{j=0}^{\ell-1}H_j,\qquad
@@ -111,13 +107,14 @@ For example,
 u_2^{(0)}=\frac{(x-1)(3x^2y^2-x^2-y^2-1)}{3(x+1)}.
 ```
 
-Their only radial denominators are powers of $x+1$. This proves smoothness of
-the potentials on the closed exterior coordinate domain, but is not our metric
-regularity proof; that requires section 4.
+Their only radial denominators are powers of $x+1$, so the potentials are smooth
+on the closed exterior coordinate domain. Metric regularity requires the
+reconstruction in section 4.
 
 ## 3. Direct differential-equation check and boundary data
 
-Let $D$ and $B$ be the operators in [README](../README.md), and set
+Let $D$ and $B$ be the operators in
+[the Ernst equation note](ernst-equation.md#ernst-equation), and set
 $t=2y/(x+1)^2$, so $\mathcal E_K=f+i\chi t+\chi^2g+O(\chi^3)$.
 Independent substitution checks the three residuals, for each $\ell$:
 
@@ -145,8 +142,8 @@ polynomial division in $x$ to specify its full nondecaying polynomial part.
 These polynomials are saved as `polynomial_boundary_data` in the same record.
 They are prescribed formal exterior data, not a claim of asymptotic flatness
 for the finite-amplitude exact metric. Fix the rod scale, coordinates, twist
-origin, and azimuthal/time conventions. To specify the remaining spin mode
-without an implicit reference, project $v_\ell^{(1)}$ on $P_1(y)$ using
+origin, and azimuthal/time conventions. To fix the remaining spin mode, project
+$v_\ell^{(1)}$ on $P_1(y)$ using
 $\tfrac32\int_{-1}^1yv_\ell^{(1)}dy$ and prescribe its partial-fraction
 coefficient of $(x+1)^{-2}$ as $-16/15$ for $\ell=2$ and $-32/735$ for
 $\ell=4$. This algebraic residue is not a condition of inner-horizon regularity
@@ -162,8 +159,7 @@ For $\ell=2$ this includes a rotating-frame type mode; for $\ell=4$ it
 includes an odd $\ell=3$ growing sector. Discarding these while leaving the
 other coefficients unchanged fails the sourced recursion. A different
 prescription with those independent growing modes removed requires a new
-solution, including compensating second-spin-order corrections. The present
-construction does not claim that alternative problem has been solved.
+solution, including compensating second-spin-order corrections.
 
 ## 4. Metric reconstruction and smooth horizon
 
@@ -317,18 +313,13 @@ imaginary-odd spin parity, finite angular expansions, the stated horizon/axis
 conditions, fixed polynomial exterior data from section 3 and fixed exceptional
 modes, the six displayed fields are unique. Proof: subtract two candidates.
 Their zero-spin difference lies in the just-classified homogeneous kernel and
-vanishes. The order-$\chi$ difference therefore obeys the same homogeneous
-equation and vanishes; the order-$\chi^2$ difference does likewise. This is
-uniqueness for the complete stated data, not for an unspecified phrase such
-as 'a quadrupolar tide'. Infinite angular sums require separate convergence
-control, and no convergent all-spin theorem is asserted.
+vanishes. The difference at order $\chi$ therefore obeys the same homogeneous
+equation and vanishes; the difference at order $\chi^2$ does likewise.
+Uniqueness depends on the complete boundary data, including the spin-linked
+odd growing modes and the exceptional-mode prescription. Infinite angular sums
+require separate convergence control, and no convergent all-spin theorem is asserted.
 
-## 6. Verification and next mathematical task
-
-**23 November update:** [The mixed construction](mixed-construction.md) completes
-the driven interaction described below for these declared inputs. It adds the
-mixed boundary data and a restricted uniqueness argument; no response functional
-or physical Love coefficient has been computed.
+## 6. Verification and related constructions
 
 [verify_linear_drivers.py](../verify_linear_drivers.py) gives 82 exact checks of
 the map derivative, six differential equations, parity, horizon values, metric
@@ -337,10 +328,11 @@ extension arguments above are proofs with stated assumptions, not consequences
 of counting tests. The [saved record](../results/linear-drivers.json) preserves
 all six expressions and all their nondecaying boundary polynomials.
 
-The next mathematical calculation is the driven mixed field for these declared
-inputs. It must prescribe its own mixed-order exterior data and classify its
-homogeneous freedom. A separate transformation is needed if we later require
-zero independent magnetic growing data, a different rotating frame, or a
-physically matched tidal response. Existing [response-basis algebra](response-definition.md)
-remains useful, but the present $\epsilon_\ell$ family has not been identified
-with that note's fully matched external variables.
+[The mixed construction](mixed-construction.md) uses these fields to construct
+their driven interaction, with its own mixed-order boundary data and uniqueness
+argument. [The radial reduction](radial-response.md) then evaluates a connection
+coefficient under a specified subtraction convention. Zero independent magnetic
+growing data, a different rotating frame or physical matching would require a
+further transformation. In particular, the present $\epsilon_\ell$ family has
+not been identified with the external variables in the
+[response definition](response-definition.md).

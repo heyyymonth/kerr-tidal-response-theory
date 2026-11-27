@@ -14,6 +14,28 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  formal:
+    name: Lean radial proofs
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the research collection
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Build with the pinned Lean and Mathlib versions
+        uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee # v1
+        with:
+          lake-package-directory: formal
+          use-mathlib-cache: 'true'
+          build: 'true'
+          test: 'false'
+          lint: 'false'
+      - name: Audit formal proof axioms
+        working-directory: formal
+        run: lake env lean CheckAxioms.lean
+      - name: Confirm tracked evidence was not rewritten
+        run: git diff --exit-code
   reproduce:
     name: Symbolic reproduction
     runs-on: ubuntu-latest
@@ -33,6 +55,8 @@ jobs:
           python -m pip check
       - name: Reproduce records and check local links
         run: python verify_reproduction.py --report tmp/ci-reproduction.json
+      - name: Compare formal expressions with the reproduced record
+        run: python verify_formal_transcription.py
       - name: Confirm tracked evidence was not rewritten
         run: git diff --exit-code
       - name: Retain execution receipt

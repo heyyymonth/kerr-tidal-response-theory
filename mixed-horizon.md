@@ -2,11 +2,9 @@
 
 Venkata Hemanth Athota · Analytical working note · 13 November 2026
 
-## Question and result
+## Curvature limit
 
-Can a finite applied quadrupolar tide cancel the curvature singularity associated with a decaying quadrupolar seed in the stationary, axisymmetric solution family used by Gounis, Kehagias and Riotto [1]?
-
-For the reflection-symmetric local vacuum family specified below, the answer is no. With fixed decaying amplitude $d\ne0$ and finite applied amplitude $c$, the dimensionless Kretschmann scalar $\mathcal K$ obeys
+In the reflection-symmetric local vacuum family specified below, a finite applied quadrupolar tide cannot cancel the curvature singularity of a fixed nonzero decaying quadrupolar seed. This is the stationary, axisymmetric family used by Gounis, Kehagias and Riotto [1]. For fixed decaying amplitude $d\ne0$ and finite applied amplitude $c$, the dimensionless Kretschmann scalar $\mathcal K$ obeys
 
 $$
 \boxed{\lim_{r\to0^+}r^6\log\mathcal K=\frac32d^2>0.}
@@ -36,7 +34,7 @@ $$
 R^2=x^2+y^2-1,\quad \cos\vartheta=xy/R.
 $$
 
-These are **Weyl-spherical** seed amplitudes, not the separated prolate $P_\ell(x),Q_\ell(x)$ amplitudes in the preliminary [Ernst note](README.md). On $z=y=0$, $x=\sqrt{1+r^2}$ and
+These are **Weyl-spherical** seed amplitudes, not the separated prolate $P_\ell(x),Q_\ell(x)$ amplitudes in the [Ernst note](docs/ernst-equation.md#static-seeds). On $z=y=0$, $x=\sqrt{1+r^2}$ and
 
 $$
 \psi=-\frac{c r^2}{2}-\frac{d}{2r^3}.
@@ -222,18 +220,16 @@ $$
 
 It is eventually positive. Its logarithm grows only logarithmically in $r$, while $4U=O(r^{-3})$ and $-4\gamma=3d^2/(2r^6)+O(r^{-3})$. Multiplication by $r^6$ proves the stated limit for either sign of $d$.
 
-## What this establishes and the next proof obligation
+## Scope of the obstruction
 
 Within this reflected quadrupolar family, a nonzero decaying seed obstructs a regular extension at the equatorial point of the background horizon. Finite applied amplitude cannot cancel that obstruction. This is a reconstruction of an existing curvature argument with controlled limits, not a novelty claim.
 
-It does not classify global event horizons or prove nakedness. It does not establish that the solution-generating family contains every admissible tidally perturbed Kerr solution. Most importantly, a seed amplitude has not yet been identified with an independently matched nonlinear response coefficient.
+It does not classify global event horizons or prove nakedness. It does not establish that the solution-generating family contains every admissible tidally perturbed Kerr solution. A seed amplitude has not yet been identified with an independently matched nonlinear response coefficient.
 
-The next substantive question is whether a regular, *driven* mixed-multipole solution can carry an independent conservative response after fixing mass, spin, gauge, and the applied-field normalization. The mixed Ernst equation in [the starting note](README.md#4-derive-the-actual-nonlinear-coupling-equation) states that boundary-value problem. Excluding the singular branch examined here is necessary for this family; it does not solve the driven matching problem.
+The [mixed Ernst equation](docs/ernst-equation.md#mixed-perturbations) poses a separate driven problem. The [mixed construction](docs/mixed-construction.md) solves it through spin squared for specified mathematical data, and the [radial reduction](docs/radial-response.md) evaluates a subtraction-dependent connection coefficient. Whether that regular interaction carries an independently matched conservative response still requires fixed mass, spin, gauge and applied-field normalization, together with a reference prescription. Excluding the singular branch examined here does not provide that matching.
 
 ## Reproduction and sources
 
-Run `python3 verify_mixed_horizon.py` with the versions in `requirements.txt`; `--write` regenerates [the verification record](results/mixed-horizon.json). The record includes the exact stationary curvature polynomial, checked identities, script hash, and explicit limits of the calculation. The rotating asymptotic proof is the argument above, not a black-box symbolic certificate.
+Run `python3 verify_mixed_horizon.py` with the versions in `requirements.txt`; `--write` regenerates [the verification record](results/mixed-horizon.json). The record includes the exact stationary curvature polynomial, checked identities, script hash, and explicit limits of the calculation. The rotating limit rests on the asymptotic argument above; the symbolic checks verify its algebraic inputs.
 
-1. L.-R. Gounis, A. Kehagias and A. Riotto, *The vanishing of the non-linear static Love number of Kerr black holes and the role of symmetries*, JCAP 03 (2025) 002. [DOI](https://doi.org/10.1088/1475-7516/2025/03/002); [published version](https://access.archive-ouverte.unige.ch/access/metadata/6f750ab1-3a83-4f83-b11c-4d26903dce33/download). Source-version provenance is recorded in [README](README.md#evidence-and-source-versions).
-
-This note has not been incorporated into the cluster-dynamics manuscript or submitted as a research result.
+1. L.-R. Gounis, A. Kehagias and A. Riotto, *The vanishing of the non-linear static Love number of Kerr black holes and the role of symmetries*, JCAP 03 (2025) 002. [DOI](https://doi.org/10.1088/1475-7516/2025/03/002); [published version](https://access.archive-ouverte.unige.ch/access/metadata/6f750ab1-3a83-4f83-b11c-4d26903dce33/download). Source-version provenance is recorded in [the literature audit](docs/literature-audit.md#published-kerr-version-and-formula-audit).

@@ -2,16 +2,15 @@
 
 Venkata Hemanth Athota · 20 November 2026
 
-**Status:** the algebraic electric-tidal sector and its aligned projection are
-derived below. The coefficient's physical value, the full EFT reduction, and
-the mixed Kerr boundary-value solution remain uncomputed. This is a research
-definition with explicit remaining conditions, not a vanishing theorem.
+This note derives the algebraic electric-tidal sector and the coefficient
+combination selected by alignment. Its physical value, the full EFT reduction
+and a Kerr solution calibrated to the external data below remain open.
 
-**22 November continuation:** the immediate work is now mathematical.
-[Linear construction](linear-construction.md) gives regular driver families
-with a complete mathematical boundary prescription. Their spin-linked odd
-growing data have not been converted to the pure-electric external convention
-used in this note. Keep the two prescriptions distinct until that map is proved.
+The [linear](linear-construction.md) and [mixed](mixed-construction.md)
+constructions solve a mathematical boundary problem through spin squared. Their
+spin-linked odd growing data have not been converted to this note's pure-electric
+external convention, so their seed amplitudes cannot yet be used as the matched
+variables defined here.
 
 ## 1. External variables and normalization
 
@@ -215,7 +214,8 @@ equally admissible research outcome. The following steps remain necessary:
 4. **Construct the reference prediction independently.** Include the mass,
    spin, intrinsic Kerr multipoles, lower-order response couplings already
    matched in the same convention, and nonlinear gravitational iterations.
-   Do not define this reference as the entire answer obtained in step 3.
+   Defining the reference as the entire answer from step 3 would make the
+   comparison circular.
 5. **Match in a common region** $M\ll R\ll\mathcal R_{\rm ext}$. Fix the
    gauge map, regularization and finite-subtraction convention on both sides.
    A candidate is dimensional regularization with minimal subtraction at
@@ -230,9 +230,9 @@ equally admissible research outcome. The following steps remain necessary:
    Check the zero-spin quadratic response against the published Schwarzschild
    matching. Audit novelty for the final, fully defined quantity.
 
-Full physical matching has not been performed, so these requirements are not
-marked complete. The next executable GR task is step 2 together with the
-external-definition audit in step 1; no value should be inferred from regularity alone.
+Physical matching remains open. It first requires the external-definition
+audit and calibration of the linear fields in steps 1–2. Horizon regularity
+alone assigns no value to the matched coefficient.
 
 ## 6. Evidence and primary sources
 
@@ -252,6 +252,6 @@ by [Iteanu et al., sections 4.2, 5.3 and 6.2](https://arxiv.org/html/2410.03542v
 restrict their tidal expansion to linear external perturbations: their
 quadrupole--octupole mixing is not this cubic-action sector.
 These papers motivate the prescription; they do not compute our $c_a$.
-See the [dated literature update](literature-audit.md#20-november-2026-channel-audit)
-for current scope and a recent challenge to broader vanishing claims. This
-local algebraic reconstruction is not asserted to be a new literature result.
+The [literature audit](literature-audit.md#20-november-2026-channel-audit)
+records the scope of these comparisons and a challenge to broader vanishing
+claims. No novelty is claimed for this algebraic reconstruction.

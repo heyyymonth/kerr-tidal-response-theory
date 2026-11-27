@@ -2,7 +2,7 @@
 
 Venkata Hemanth Athota · 24 November 2026
 
-**Result.** We reduce the constructed mixed field to a forced quadrupolar
+We reduce the constructed mixed field to a forced quadrupolar
 Legendre equation and define a source-subtracted connection coefficient without
 using the regular solution as its own reference. In the finite-part convention
 specified below, its static value is zero and its spin-squared value is
@@ -11,11 +11,11 @@ specified below, its static value is zero and its spin-squared value is
 b^{(0)}=0,\qquad b^{(2)}=-\frac{16172}{218295}.
 ```
 
-The same value follows from the source and horizon smoothness alone. This is a
-conditional mathematical result. A different, explicitly defined subtraction
-gives a different coefficient while preserving the homogeneous normalization.
-No convention-independent response or physical Love coefficient is established.
-The original independently matched vanishing conjecture remains unsettled.
+The same value follows from the source and horizon smoothness alone. It depends
+on the subtraction: an alternative defined below changes the coefficient while
+preserving the homogeneous normalization. Thus it does not settle the original
+independently matched vanishing conjecture or define a convention-independent
+response or physical Love coefficient.
 
 ## 1. Isolating the radial problem
 
@@ -273,15 +273,10 @@ Frobenius reference is checked through $x^{-7}$; the differential equations,
 flux identity and finite-part value are exact rational identities. Its formal
 series check is not a proof of convergence.
 
-Two independent AI-assisted derivations agreed on the nonzero value, the
-source-and-horizon derivation, and the subtraction ambiguity; this is not
-scientific peer review. The older 217 checks/components remain unchanged,
-bringing the collection to 262. The standard Legendre framework is prior
-mathematics; no novelty or physical counterexample is claimed.
+The standard Legendre framework is prior mathematics; no novelty or physical
+counterexample is claimed.
 
-The next mathematical task is to determine whether additional structure can
-select a response definition with a justified normalization, or whether the
-appropriate statement concerns only subtraction-invariant differences. That
-choice must add a criterion beyond regularity and homogeneous-branch
-calibration. A physical matching prescription is one possible later source
-of such structure, rather than an assumption hidden in the present result.
+An absolute response requires a normalization criterion beyond regularity and
+homogeneous-branch calibration. Without one, the natural invariant quantities
+are differences between solutions of the same source problem. Physical matching
+could supply such a criterion, but is not assumed in this calculation.

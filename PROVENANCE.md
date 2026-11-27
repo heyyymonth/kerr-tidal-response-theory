@@ -1,139 +1,96 @@
 # Provenance and reproduction
 
-## Inherited foundation
+## History
 
-The starting directory held nine research files and had no Git history. All nine
-were read and the two calculations were rerun in a newly created Python 3.11.1
-environment before the first commit. The complete fresh results matched the
-saved records, including their script hashes: 32 baseline checks, 18 curvature
-checks, and 16 vacuum Ricci components. No expected result was rewritten.
+The starting directory contained nine research files and had no Git history.
+All nine were read and both calculations were rerun before publication. The
+fresh results matched the saved records, including script hashes. The original
+files are preserved byte for byte in
+[the initial import](https://github.com/heyyymonth/kerr-tidal-response-theory/commit/af774499c43b306a41612c37d629a2e41768ca43);
+[import.json](provenance/import.json) records their hashes.
 
-The original nine files are preserved byte for byte in
-[commit af774499c43b306a41612c37d629a2e41768ca43](https://github.com/heyyymonth/kerr-tidal-response-theory/commit/af774499c43b306a41612c37d629a2e41768ca43).
-[provenance/import.json](provenance/import.json) records their SHA-256 hashes.
-The original handoff describes its own pre-repository checkpoint. Later Git
-commits record publication edits and the user's chosen public name,
-**Kerr Tidal Response Theory** (`kerr-tidal-response-theory`). The local directory
-retains its original name so existing local handoff paths continue to work.
+Subsequent commits contain the response basis, linear and mixed constructions,
+and radial reduction. The
+[checkpoint before the documentation review](https://github.com/heyyymonth/kerr-tidal-response-theory/tree/c5e7faaae858c8a060da524691f33ab08d1a20b6)
+preserves the full accumulated handoff and research history. The review shortened
+the public notes and separated the governing equations from the README. It did
+not change the six calculation scripts or their expected scientific records.
 
-The historical context was read from the sibling project at
-[96f93a706f55f2c4f5d4fd1c734157553dc022a7](https://github.com/heyyymonth/black-hole-recoil-dynamics/tree/96f93a706f55f2c4f5d4fd1c734157553dc022a7),
-verified to exist on GitHub. Its README, transport hypothesis, author and
-contribution conventions, and manuscript README were consulted read-only. Public
-cross-project links use this revision. No sibling calculation, manuscript, or
-synced parent `sources/` file was modified or imported as Kerr evidence.
+The public name is **Kerr Tidal Response Theory**. The local directory retains
+`kerr-tidal-response` for continuity with earlier handoff paths. Historical
+context from the separate recoil project was consulted at
+[revision 96f93a7](https://github.com/heyyymonth/black-hole-recoil-dynamics/tree/96f93a706f55f2c4f5d4fd1c734157553dc022a7).
+No sibling or synced parent `sources/` files were changed, and none of that
+project's calculations serves as evidence for the Kerr conjecture.
 
-## Scientific evidence and execution records
+## Evidence records
 
-| File | Role |
-|---|---|
-| [verify_baseline.py](verify_baseline.py) | Original exact Ernst, Legendre, variation, and angular checks. |
-| [verify_mixed_horizon.py](verify_mixed_horizon.py) | Original reflected vacuum frame contraction, curvature controls, and static limits. |
-| [baseline.json](results/baseline.json), [mixed-horizon.json](results/mixed-horizon.json) | Inherited deterministic scientific records; retained unchanged at publication. |
-| [verify_response_basis.py](verify_response_basis.py), [response-basis.json](results/response-basis.json) | 20 November continuation: 33 exact STF, response-normalization and harmonic-coordinate checks; no physical coefficient value. |
-| [verify_linear_drivers.py](verify_linear_drivers.py), [linear-drivers.json](results/linear-drivers.json) | 22 November continuation: 82 exact linear recursion, metric identity, boundary normalization and kernel checks. |
-| [verify_mixed_solution.py](verify_mixed_solution.py), [mixed-solution.json](results/mixed-solution.json) | 23 November continuation: 36 exact mixed-map, forced-equation, angular, boundary and regularity-identity checks. |
-| [verify_radial_response.py](verify_radial_response.py), [radial-response.json](results/radial-response.json) | 24 November continuation: 45 exact radial, primitive, horizon, Frobenius and subtraction-convention checks. |
-| [verify_reproduction.py](verify_reproduction.py) | Read-only comparison of all six fresh complete outputs, pinned package versions, and script/result hashes; also checks local Markdown file targets. |
-| [reproduction.json](results/reproduction.json) | Fresh execution receipt with actual time, interpreter, platform, package versions, input hashes, and comparisons. |
+| Calculation | Saved record | Checks and scope |
+|---|---|---|
+| [Baseline](verify_baseline.py) | [baseline.json](results/baseline.json) | 32 Ernst, Legendre, variation and angular checks. |
+| [Horizon curvature](verify_mixed_horizon.py) | [mixed-horizon.json](results/mixed-horizon.json) | 18 curvature checks and 16 Ricci components after imposing local vacuum relations. |
+| [Response basis](verify_response_basis.py) | [response-basis.json](results/response-basis.json) | 33 tensor, normalization and harmonic-coordinate checks. |
+| [Linear drivers](verify_linear_drivers.py) | [linear-drivers.json](results/linear-drivers.json) | 82 recursion, metric identity, boundary and representative kernel checks. |
+| [Mixed solution](verify_mixed_solution.py) | [mixed-solution.json](results/mixed-solution.json) | 36 map, forced-equation, angular, boundary and regularity-identity checks. |
+| [Radial response](verify_radial_response.py) | [radial-response.json](results/radial-response.json) | 45 radial, primitive, horizon, Frobenius and subtraction checks. |
 
-Run with Python 3.11:
+The total of 262 includes different kinds of evidence: exact differential
+identities, controls, bookkeeping identities and consistency checks. It is not
+262 independent proofs. [Verification coverage](docs/verification.md) explains
+which claims each method supports.
+
+The records are immutable checkpoints unless a scientific correction requires
+a reviewed replacement. Their `not_established` statements describe the scope
+of that individual calculation when written. For example, the baseline record
+predates the mixed solution. Current status is in [CLAIMS.md](CLAIMS.md).
+
+## Reproduction
+
+With Python 3.11 and [pinned dependencies](requirements.txt), run:
 
 ```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -m pip check
 .venv/bin/python verify_reproduction.py
+.venv/bin/python verify_formal_transcription.py
 ```
 
-The default command never writes results. To retain a new execution receipt,
-use `--report tmp/reproduction.json`. This option cannot target any expected
-scientific record. The calculation scripts' `--write` options deliberately
-regenerate expected records and should be used only for a reviewed scientific
-change, as described in [CONTRIBUTING.md](CONTRIBUTING.md).
+The wrapper compares complete fresh outputs, serialized bytes, script hashes
+and dependency versions. It also checks local Markdown file targets. The
+default command writes nothing. `--report tmp/reproduction.json` saves a separate
+execution receipt; it cannot overwrite expected scientific records. See
+[CONTRIBUTING.md](CONTRIBUTING.md) before regenerating an expected record.
 
-The CI workflow installs the same pinned SymPy and mpmath versions in a fresh
-Python 3.11 environment, checks dependencies, reruns all six calculations, checks
-local file links, and uploads its execution receipt. Actions are pinned to
-verified commit SHAs. The receipt records the actual Python patch version;
-the entire operating system and Python build are not frozen. Dependency pins
-support reproducibility and are not a claim that those releases are the newest.
+[results/reproduction.json](results/reproduction.json) records the interpreter,
+platform, package versions, input hashes, comparisons and execution time.
+Earlier receipts remain in Git history. The operating system and Python build
+are not frozen; the actual Python patch version is recorded. Publication checks
+also confirmed that changed expected results, changed calculation scripts and
+attempts to overwrite an expected record with a receipt are rejected.
 
-Publication validation also confirmed, in a temporary copy, that a changed expected result, a changed calculation script, and an attempt to overwrite an expected record with an execution receipt are rejected.
+The [Lean project](formal/README.md) has a separate pinned toolchain and dependency
+manifest. It checks selected statements from the radial calculation, including
+their derivative and domain assumptions. The [CI workflow](.github/workflows/verify.yml)
+runs symbolic reproduction and formal verification separately. A transcription
+check compares the three explicit formal rational functions with the reproduced
+radial record. CI does not
+certify the encoding of the full Einstein problem or the unformalized analytic
+arguments.
 
-CI reports numerical/algebraic execution status. It does not review the
-conditional asymptotic proof, validate global boundary conditions, or perform
-EFT matching. The 16 Ricci components are checked after imposing the declared
-local vacuum relations; they do not establish an arbitrary full metric as vacuum.
+## Sources and attribution
 
-## Response-definition continuation
-
-On 20 November 2026, the declared parity-even electric 224 spin-squared algebraic
-sector was reconstructed by an SO(3) multiplicity count and three independent
-Cartesian contractions. Exact aligned weights, two invisible coefficient
-directions, the STF functional derivative and a prolate-to-solid-harmonic
-calibration were checked. A separate review independently confirmed the
-formulas and all 33 new checks. This review used AI assistance as disclosed in
-[AUTHORS.md](AUTHORS.md); it is not scientific peer review.
-
-The new [definition note](docs/response-definition.md) records the conditional
-normalization and remaining matching prescription. Its algebraic completeness
-does not establish a full on-shell EFT basis, physical source map or a Kerr
-coefficient. The original scripts and two expected records remain unchanged.
-The execution receipt is refreshed for the expanded collection; the earlier
-receipt remains available in Git history. No third-party paper is distributed.
-
-## Linear and mixed construction continuation
-
-The 22 November [linear-construction note](docs/linear-construction.md) uses the
-known distorted-Kerr metric and Ernst map with explicitly chosen seed and
-parameter conventions. Two derivations of the spin coefficients agreed, and
-the final script checks their differential equations directly. The metric
-extension and finite-mode uniqueness arguments are stated separately from the
-82 algebra checks. Review assistance is AI-assisted, not peer review. The
-published Gounis Eq. (4.1) was checked in the saved published text, and
-Abdolrahimi et al. arXiv:1509.01665v2 section 2 was read in primary HTML.
-Its later rescaled coordinate/charge conventions are not silently imported.
-No pure-electric physical source map or new Love coefficient is claimed.
-
-On 23 November 2026, the same known family was differentiated in both even
-seed amplitudes. The [mixed note](docs/mixed-construction.md) states the
-resulting forced solution, full mixed exterior data, local metric extension,
-and finite-mode uniqueness assumptions. All three forced equations vanish
-identically under direct differential substitution. Independent AI-assisted
-derivation and review agreed on the fields, spin residue, horizon values and
-quadrupolar projections. The nonzero decaying coordinate terms are explicitly
-distinguished from independent response. This review is not peer review.
-The four older deterministic records are unchanged; the expanded reproduction
-receipt covers 217 checks/components. The extra quadratic term in the exact
-metric potential was checked against the primary 2015 source's ordered double
-sum, including both cross terms. No third-party paper is redistributed.
-
-## Literature and rights
-
-The [24 November radial note](docs/radial-response.md) constructs a finite-part
-primitive from source data alone, before evaluating the regular solution. Its
-nonzero spin-squared connection coefficient is independently recovered from
-source data and horizon smoothness. Two AI-assisted derivations agreed on
-the value and subtraction ambiguity; a separate run reproduced all 45 new
-checks and the complete saved output. This is not peer review. The five older
-deterministic records remain unchanged, and the updated receipt covers 262
-checks/components. Standard Legendre identities were checked directly, with
-NIST DLMF section 14.2 as a mathematical reference. Gralla's convention analysis
-provides context, not this calculation's numerical value or a current novelty
-verdict. No physically matched Love coefficient is claimed.
-
-[sources.json](provenance/sources.json) records versioned source locations,
+[sources.json](provenance/sources.json) records primary-source versions,
 inspection scope and available download hashes. The
 [literature audit](docs/literature-audit.md) distinguishes published papers,
-preprints, and abstract-only screening. The published Kerr PDF was retrieved
-again and its hash matched the inherited value. Rendered pages checked the
-formulas independently of text extraction. Downloaded papers and rendered pages
-are temporary, ignored working references, not distributed with this repository.
+preprints and abstract-only screening. The governing exact metric family comes
+from the cited literature; differentiating it does not transfer authorship of
+that family to this project.
 
-Original code and documentation are available under the [MIT license](LICENSE).
-Referenced papers, dependency packages and other third-party materials retain
-their own rights. Mathematical reconstruction does not transfer authorship of
-prior results. See [AUTHORS.md](AUTHORS.md) for personal metadata and assistance
-disclosure, and [CITATION.cff](CITATION.cff) for citing this collection. No DOI,
-journal publication, or peer review is claimed for this repository.
+The published Gounis–Kehagias–Riotto PDF was retrieved again and its SHA-256
+matched `58d49474ca3438ce77fa3c9dc87002cb930c48710bbccfb246bebb3df65cd1d6`.
+Selected rendered pages were checked against extracted formulas. The published
+version includes a mixed-quadrupole discussion absent from arXiv v1. Downloaded
+papers and page images are temporary references and are not distributed here.
+
+Original code and documentation use the [MIT license](LICENSE). Papers and
+dependencies retain their own rights. [AUTHORS.md](AUTHORS.md) records authorship,
+contact and assistance disclosure; [CITATION.cff](CITATION.cff) identifies this
+working collection. No repository DOI or peer review is claimed.

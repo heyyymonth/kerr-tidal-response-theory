@@ -2,21 +2,22 @@
 
 Venkata Hemanth Athota · 23 November 2026
 
-**Result.** For the two mathematical drivers in [the linear construction](linear-construction.md),
+For the two mathematical drivers in [the linear construction](linear-construction.md),
 we construct the coefficient of their product explicitly through spin squared.
 It satisfies the three forced Ernst equations identically. The known exact
 metric family supplies a smooth local horizon and axis extension. The solution
 is unique in the earlier finite-mode, fixed-gauge class when its complete mixed
 boundary data are prescribed. It is nonzero, including in its quadrupolar
-projection. This is neither a nonzero Love coefficient nor a vanishing theorem.
+projection. A physical Love coefficient would require a separate matching
+prescription.
 
 The construction differentiates a known distorted-Kerr solution. Its exact
 family and existence are prior work, recorded in
 [Abdolrahimi et al., section 2](https://arxiv.org/html/1509.01665v2#S2) and
 [Gounis et al., published Eq. (4.1)](https://doi.org/10.1088/1475-7516/2025/03/002).
 The former credits Bretón, Denisova and Manko with the explicit metric.
-We give a reproducible specialization and finite-order proof, without a novelty
-claim for the family or this differentiation.
+This note records a reproducible specialization and finite-order proof; no
+novelty is claimed for the family or its differentiation.
 
 ## 1. What is being solved
 
@@ -65,7 +66,7 @@ w_{24}=\left.\frac{\partial^2\mathcal E}
 The expansion of $\mathcal E$ includes $\epsilon_2\epsilon_4w_{24}$ with
 **no factorial**. The functions $w_j$ displayed below are real.
 
-For clarity define the differential operators explicitly:
+Define the differential operators:
 
 ```math
 Dv=\partial_x[(x^2-1)\partial_xv]+\partial_y[(1-y^2)\partial_yv],
@@ -283,25 +284,18 @@ the forced contribution from any additional response. A mathematical version
 of that rule also needs a reference solution or boundary functional; naming
 every decaying term a response does not supply one.
 
-## 7. Evidence and next step
-
-**24 November update:** [The radial reduction](radial-response.md) executes the
-next step below. It defines and evaluates a source-only finite-part connection
-coefficient, and demonstrates its dependence on subtraction conventions.
-No preferred invariant or physically matched response is established.
+## 7. Verification and radial reduction
 
 [verify_mixed_solution.py](../verify_mixed_solution.py) supplies 36 exact checks:
 the rational map expansion and amplitude derivatives, all three forced
 equations, parity, boundary splits, angular reconstructions, horizon values,
 the additional metric-potential identities and the declared spin residue.
-An independent AI-assisted derivation agreed with the fields, equations,
-residue and quadrupolar projections; this is not scientific peer review.
-The older 181 checks/components remain unchanged, giving 217 in total.
+The [saved record](../results/mixed-solution.json) contains the exact fields,
+sources, projections and boundary data.
 
-We have now constructed both the inputs and their regular driven interaction
-for one fully specified mathematical problem. The next step is to isolate the
-quadrupolar radial problem and define a response functional independently of
-the answer. Its subtraction convention and allowed changes of normalization
-must be stated before testing a vanishing claim. Choosing the present solution
-as its own reference and declaring the residual zero would be circular.
-Physical calibration and matching remain a later, distinct interpretation.
+[The radial reduction](radial-response.md) defines a source-only finite-part
+connection coefficient for the quadrupolar sector and shows how its value
+changes with the subtraction convention. Choosing the regular solution itself
+as the reference would instead force a zero by definition. Neither a preferred
+invariant normalization nor physical calibration and matching has been
+established.

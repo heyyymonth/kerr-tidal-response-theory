@@ -1,19 +1,18 @@
 # Literature scope and source-version audit
 
-Checked 13 November 2026 (America/Los_Angeles). This is a bounded audit of the
-foundation and nearby literature, not an exhaustive priority search. The
-candidate aligned mixed quadrupole--hexadecapole spin-squared channel remains
-unresolved in this repository. Its novelty is **not established**.
-
-The foundation audit below is historical. The [20 November update](#20-november-2026-channel-audit)
-adds a recent competing result and more focused matching references.
+This audit records source checks made on 13–24 November 2026
+(America/Los_Angeles). It covers the foundation and nearby literature, rather
+than an exhaustive priority search. The independently matched aligned
+quadrupole–hexadecapole response at spin-squared order remains unresolved, and
+its novelty is not established. The dated sections distinguish the scope of
+each inspection.
 
 ## Sources checked
 
 | Source and version | What was inspected | Relevance and limits |
 |---|---|---|
 | Gounis, Kehagias and Riotto, [JCAP 03 (2025) 002](https://doi.org/10.1088/1475-7516/2025/03/002), published 4 March 2025 | Published PDF, especially Eqs. (2.11), (5.7)--(5.18), (5.26), (6.7), and the paragraph after (5.18); compared with arXiv:2412.08249v1. | The quadrupolar singular-seed argument is prior work. The published paper already discusses simultaneous growing and decaying quadrupoles. This is not the same question as a separately normalized, mixed applied ell=2 and ell=4 response matched at quadratic spin order. The present reconstruction does not prove their equivalence or inequivalence. |
-| Combaluzier-Szteinsznaider, Hui, Santoni, Solomon and Wong, [JHEP 03 (2025) 124](https://doi.org/10.1007/JHEP03(2025)124), published 18 March 2025 | Published article and PDF, especially section 4.3 and the discussion of operator degeneracy; appendix D identifies tensor-basis issues. | Establishes an infinite subset of nonlinear static parity-even Schwarzschild response couplings through Weyl/EFT matching. The paper explains when axisymmetric data do not determine every coupling. It is a foundation, not an uncomputed result to claim here. |
+| Combaluzier-Szteinsznaider, Hui, Santoni, Solomon and Wong, [JHEP 03 (2025) 124](https://doi.org/10.1007/JHEP03(2025)124), published 18 March 2025 | Published article and PDF, especially section 4.3 and the discussion of operator degeneracy; appendix D identifies tensor-basis issues. | Establishes an infinite subset of nonlinear static parity-even Schwarzschild response couplings through Weyl/EFT matching. The paper explains when axisymmetric data do not determine every coupling. It is used here as a prior result. |
 | Iteanu, Riva, Santoni, Savic and Vernizzi, [JHEP 02 (2025) 174](https://doi.org/10.1007/JHEP02(2025)174), published 26 February 2025 | Published article and PDF, particularly sections 5.3 and 6.2. | Quadratic Schwarzschild response is treated with even and odd perturbations and matching across multipoles. The zero-spin limit of the proposed quadratic channel is therefore not a prospective discovery. A Kerr extension still needs spin-dependent structures and matching. |
 | Rodriguez, Santoni and Solomon, [arXiv:2604.08653v1](https://arxiv.org/html/2604.08653v1), 9 April 2026 | Version history and sections 2.2.4 and 6.3.2. | An invited-review preprint. Section 6.3.2 distinguishes the quadrupolar Kerr tail result from a full all-multipole stationary axisymmetric Kerr computation with EFT matching, which it describes as unfinished. This is a dated scope assessment, not proof that our particular channel is unpublished. No journal publication is verified here. |
 | Gralla, [CQG 35 (2018) 085002](https://doi.org/10.1088/1361-6382/aab186); [arXiv:1710.11096v3](https://arxiv.org/html/1710.11096v3), 6 March 2018 | Author version marked as matching publication; sections 2--3. | Demonstrates why reading a decaying metric coefficient without specifying coordinates and response conventions is insufficient. Its historical statements about waveform knowledge are not adopted as current facts. |
@@ -43,8 +42,8 @@ uses dominance of the leading divergence, not boundedness of every mixed term.
 
 ## Nearby results screened
 
-- Pani et al., [Tidal deformations of a spinning compact object](https://arxiv.org/abs/1503.07365), PRD 92 (2015) 024010: the primary abstract describes linear tidal response through second order in spin. Spin order and order in applied tides are distinct. This is relevant prior work for a future linear-field construction.
-- Bhatt, Chakraborty and Bose, [Response of a Kerr black hole to a generic tidal perturbation](https://doi.org/10.1103/ftwb-vvnl), PRD 112 (2025) 084065: the publisher abstract was screened for static/dynamical and spin scope. A generic-perturbation title alone does not establish the mixed nonlinear calculation requested here; a full channel audit should examine the derivation.
+- Pani et al., [Tidal deformations of a spinning compact object](https://arxiv.org/abs/1503.07365), PRD 92 (2015) 024010: the primary abstract describes linear tidal response through second order in spin. Spin order and order in applied tides are distinct. This is relevant prior work for the linear-field construction.
+- Bhatt, Chakraborty and Bose, [Response of a Kerr black hole to a generic tidal perturbation](https://doi.org/10.1103/ftwb-vvnl), PRD 112 (2025) 084065: the publisher abstract was screened for static/dynamical and spin scope. A generic-perturbation title alone does not establish the mixed nonlinear calculation considered here; a full channel audit should examine the derivation.
 - Kumar, [Highest-weight truncation, graded EFT structure, and renormalization of black hole Love numbers](https://doi.org/10.1007/JHEP05(2026)294), published 26 May 2026: the publisher abstract was screened. It discusses scalar and Schwarzschild Regge--Wheeler/Zerilli truncation and low-frequency structure. Its derivation was not reproduced and is not imported as a mixed Kerr theorem.
 
 ## Search scope and remaining novelty work
@@ -60,12 +59,12 @@ evidence of absence. Search indexing and terminology are incomplete.
 Before making a priority claim, define the actual spin-dependent operator
 combination and compare its normalization, symmetry restrictions, perturbative
 order, and matching prescription with the relevant full papers and later
-versions. The supported conclusion now is that the proposed calculation is
-motivated and has not been carried out here; no discovery claim is made.
+versions. The independently matched calculation remains open in this repository;
+the explicit mathematical constructions do not establish its novelty.
 
 ## 20 November 2026 channel audit
 
-The [response-definition note](response-definition.md) now fixes the algebraic
+The [response-definition note](response-definition.md) fixes the algebraic
 projection under examination. The following primary-source sections were read:
 
 | Source | Inspection and implication |
@@ -98,8 +97,8 @@ formulas and axis condition. This is prior exact-solution material used for
 the [linear construction](linear-construction.md). The unrescaled metric
 convention is kept explicit. The local horizon-extension algebra is worked
 out in the note; no global regularity or physical source calibration is inferred
-from the paper's title. The known Ernst map also agrees with published Gounis
-Eq. (4.1). No new literature-priority claim is attached to the reconstruction.
+from the construction alone. The known Ernst map also agrees with published
+Gounis Eq. (4.1).
 
 ## 23 November 2026 mixed construction check
 
@@ -108,8 +107,8 @@ was rechecked for simultaneous even seeds. Its general formulas allow
 $c_2,c_4,c_0=-c_2-c_4$; the ordered quadratic sum in $V$ gives the factor
 $8/3$ in the cross term used in [the mixed construction](mixed-construction.md).
 The published Gounis map agrees with the two-seed substitution. The underlying
-exact family is prior work; this bounded source check makes no new novelty,
-physical calibration or independently matched-response claim.
+exact family is prior work. These formulas supply neither physical calibration
+nor an independently matched response.
 
 ## 24 November 2026 radial conventions
 
@@ -120,4 +119,3 @@ branches and their normalization are checked directly in
 section 3, distinguishes coordinate and reference-solution choices. It is
 context for our explicit subtraction comparison, not a source for the new
 conditional coefficient or an assertion about the present status of matching.
-No additional channel-novelty claim is made.

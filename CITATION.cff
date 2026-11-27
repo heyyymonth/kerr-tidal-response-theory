@@ -2,9 +2,9 @@ cff-version: 1.2.0
 type: software
 message: >-
   Cite this research collection using its exact Git commit, and cite the original
-  papers for their scientific results. These are analytical working notes and
-  symbolic checks, not a peer-reviewed manuscript or a new Love-number theorem.
-title: 'Kerr Tidal Response Theory: proof reconstruction'
+  papers for their scientific results. This collection contains working notes,
+  symbolic calculations and selected formal proofs.
+title: 'Kerr Tidal Response Theory'
 authors:
   - family-names: Athota
     given-names: Venkata Hemanth
@@ -24,3 +24,4 @@ keywords:
   - Kerr black holes
   - tidal response
   - symbolic verification
+  - formal verification

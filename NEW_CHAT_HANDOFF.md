@@ -1,123 +1,167 @@
-# New-chat handoff: Kerr tidal-response proof research
+# Kerr Tidal Response Theory: research handoff
 
-> Historical handoff, preserved from the pre-repository checkpoint. The user subsequently chose **Kerr Tidal Response Theory** (`heyyymonth/kerr-tidal-response-theory`) as the public repository name. Read [PROVENANCE.md](PROVENANCE.md), [CLAIMS.md](CLAIMS.md), and [the next lesson](docs/regularity-and-matching.md) for the continuation status. Statements below about a repository not yet existing describe the original checkpoint, not the current Git history.
+Author: **Venkata Hemanth Athota**
 
-Prepared for Venkata Hemanth Athota on 13 November 2026. This is a continuation brief, not a manuscript or a claim of scientific novelty.
+Public research contact: **bharadwaj.hemanth.002@gmail.com**
 
-**24 November continuation:** [The radial response note](docs/radial-response.md)
-isolates the quadrupolar forced Legendre equation. A source-only primitive with
-zero finite part at infinity defines a connection coefficient that is zero at
-spin zero and -16172/218295 at spin squared. Source/horizon and direct-solution
-derivations agree. Alternative subtractions give different values while
-preserving homogeneous calibration and the static zero. This does not settle
-the independently matched conjecture. Reproduction now covers six calculations,
-262 checks/components. Resume by examining additional normalization structure
-or subtraction-invariant differences; do not relabel the conditional number
-as a canonical response or physical Love coefficient.
+Repository: [heyyymonth/kerr-tidal-response-theory](https://github.com/heyyymonth/kerr-tidal-response-theory)
 
-**23 November continuation:** the repository is published and the mathematical
-[linear](docs/linear-construction.md) and [mixed](docs/mixed-construction.md)
-solutions through spin squared are constructed for explicit solution-generating
-boundary data. Reproduction now covers five calculations, 217 checks/components.
-The mixed field has nonzero coordinate tails; no independent response has been
-computed. Resume by defining a quadrupolar mathematical response functional
-without choosing a reference merely to force zero. The user's emphasis is
-mathematical proof with physical interpretation; full physical matching is a
-later task. Read the current notes and claim/evidence table before the historical
-instructions below. Existing authorship and repository-separation constraints persist.
+This is the current continuation brief for an existing public research
+repository. The pre-repository instructions and subsequent checkpoints remain
+available in [the historical handoff](https://github.com/heyyymonth/kerr-tidal-response-theory/blob/c5e7faaae858c8a060da524691f33ab08d1a20b6/NEW_CHAT_HANDOFF.md)
+and [historical research context](https://github.com/heyyymonth/kerr-tidal-response-theory/blob/c5e7faaae858c8a060da524691f33ab08d1a20b6/research-context.md).
+Neither document is a fresh execution record or a manuscript.
 
-## User objective
+## Objective and interpretation
 
-Continue a proof-centered investigation in classical general relativity, while teaching the user the physics and mathematics step by step. Create a separate, public, reproducible research repository modeled on the useful practices of `heyyymonth/black-hole-recoil-dynamics`. Preserve the reasoning that led here, including what earlier work established, why it does not settle this problem, and which mathematical shortcuts were rejected.
+Continue a proof-centered investigation in classical general relativity. The
+user prioritizes a mathematical problem with physical interpretation:
+construct solutions, state their boundary conditions and prove precisely scoped
+results. Physical EFT matching is a later interpretation task, rather than a
+prerequisite for every mathematical result. Explain concepts one step at a time.
+Quantum effects are outside the chosen scope.
 
-The user requested a prompt to start the new chat. At this checkpoint the Kerr working directory exists but is **not a Git repository**. This handoff does not mean a new GitHub repository or chat has already been created.
+The original candidate conjecture asks whether a regular subextremal rotating
+black hole has zero independently matched conservative response when stationary,
+axisymmetric tidal fields interact. The first proposed physical sector is the
+aligned electric quadrupole–hexadecapole contribution to a mass quadrupole,
+including order $\eta_2\eta_4\chi^2$ with $\chi=J/M^2$. Investigate the answer;
+do not assume vanishing. A proof with explicit assumptions and a regular,
+consistently matched nonzero result are both valid outcomes. Channel-specific
+novelty remains unestablished.
 
-## Read these local files first
+An independent response differs from the deformation produced by the applied
+tides and their nonlinear gravitational interaction. A zero response can coexist
+with a deformed horizon. A nonzero coordinate tail alone is not a physical
+counterexample.
 
-Working directory:
+## Current results and open work
 
-`/Users/sravanbharadwaj/.codex/.chatgpt-projects/g-p-6a0133858c1081919cca37ecfc2582fa/research/kerr-tidal-response`
+- [The Ernst note](docs/ernst-equation.md) gives the normalized stationary
+  axisymmetric equation, known static seed regularity and mixed source equation.
+- [The curvature note](mixed-horizon.md) reconstructs the local singular-seed
+  obstruction. The static calculation is exact; the rotating limit is conditional
+  on a specified reflection-symmetric local vacuum family. For fixed decaying
+  Weyl-spherical amplitude $d\ne0$, finite applied amplitude $c$ and the stated
+  fixed nonzero Kerr-seed parameter, it gives
+  $\lim_{r\to0^+}r^6\log\mathcal K=3d^2/2$. Here $r$ and $\mathcal K$ are
+  dimensionless equatorial Weyl radius and curvature. This is a leading
+  logarithmic limit, with no full-prefactor, global-horizon, family-completeness
+  or uniform zero-amplitude/zero-spin/extremal claim.
+- [The response definition](docs/response-definition.md) derives three scalars
+  in the declared algebraic electric sector and the single combination probed
+  in alignment. The full EFT reduction and physical source calibration are open.
+- [The linear](docs/linear-construction.md) and
+  [mixed](docs/mixed-construction.md) notes construct rational fields through
+  spin squared, check the forced equations, and establish local horizon/axis
+  smoothness. Uniqueness is restricted to a fixed gauge, finite angular expansions
+  and the complete stated exterior data, including exceptional modes. The known
+  distorted-Kerr family is prior work. Its spin-linked odd growing data have not
+  been transformed to the original pure-electric prescription.
+- [The radial note](docs/radial-response.md) defines a connection coefficient
+  through a source-only finite-part subtraction. It gives $b^{(0)}=0$ and
+  $b^{(2)}=-16172/218295$, with agreement between direct extraction and a
+  source-and-horizon derivation. Alternative subtractions change the coefficient
+  while preserving homogeneous normalization and the static zero. This is a
+  conditional mathematical value, not a preferred invariant response or a
+  physical Love coefficient.
 
-Read in order:
+The next mathematical issue is the normalization of an absolute response:
+identify additional structure that selects it, or formulate the result in terms
+of subtraction-invariant differences between solutions of the same source
+problem. Regularity and homogeneous calibration alone do not fix that origin.
+Physical matching could supply an additional criterion, but would also require
+calibrated external fields, fixed parameter and gauge conventions, a reference
+prediction and a common matching region.
 
-1. `research-context.md`: scientific history, decisions, evidence boundaries, and learning sequence.
-2. `README.md`: boundary-value problem, source versions, normalized equations, and proposed extension.
-3. `mixed-horizon.md`: exact static calculation and conditional rotating asymptotic argument.
-4. `verify_baseline.py`, `verify_mixed_horizon.py`, `requirements.txt`, and `results/*.json`: executable checks and saved evidence.
+## Reading and verification
 
-The earlier project is the sibling directory `black-hole-recoil-dynamics`, also at <https://github.com/heyyymonth/black-hole-recoil-dynamics>. Read its current `README.md`, `docs/transport-hypothesis.md`, `AUTHORS.md`, `CONTRIBUTING.md`, and `paper/README.md` for context and established conventions. Preserve that repository and its manuscript. Do not copy its cluster-specific equations or outputs into the Kerr project as evidence for the Kerr conjecture.
+Start with [README](README.md), [research context](research-context.md) and
+[CLAIMS.md](CLAIMS.md), then the technical note for the calculation being
+continued. [Regularity and matching](docs/regularity-and-matching.md) supplies a
+step-by-step explanation of the logical distinctions. Read
+[PROVENANCE.md](PROVENANCE.md), the [literature audit](docs/literature-audit.md)
+and [source register](provenance/sources.json) before making attribution or
+novelty claims.
 
-Files under the parent project's `sources/` are read-only synced references. Do not edit or move them. If the new chat cannot access these paths, report the missing files and obtain the handoff materials before claiming to have reproduced anything.
+The six verification scripts and their saved records cover the baseline,
+curvature, response basis, linear fields, mixed field and radial calculation.
+[Verification](docs/verification.md) records their reproduction procedure and
+limits. Dependencies are pinned in `requirements.txt`. Check actual execution
+results and script hashes; a saved record or this handoff does not establish
+that a later version has been run. For formal verification, consult
+[formal/README.md](formal/README.md) for the exact Lean statements and coverage.
+Do not describe checked algebraic lemmas as a formal proof of the whole Kerr
+construction, its analytic regularity arguments or the physical conjecture.
 
-## Candidate scientific question
+Important source distinctions are preserved in the literature audit. Use the
+published Gounis–Kehagias–Riotto paper for the simultaneous-amplitude discussion;
+arXiv v1 omits it. Existing Schwarzschild results and the distorted-Kerr map are
+prior work. Review preprints and titles alone do not establish novelty or supply
+the missing matching calculation. Check current primary literature before any
+new claim about the selected channel's status.
 
-Does a regular, subextremal rotating black hole have zero independently matched conservative response when different stationary, axisymmetric tidal fields interact nonlinearly?
+## Arguments and earlier work to preserve
 
-The provisional first sector uses aligned electric-type quadrupole and hexadecapole applied tides. Investigate their mixed mass-quadrupole response, including the contribution of order $\eta_2\eta_4\chi^2$, where $\chi=J/M^2$ in geometric units. This is a candidate sector, not an established independent operator, an already-computed response coefficient, or a verified novel result.
+The mixed equation is sourced by the interacting linear fields. Excluding a
+singular homogeneous seed does not determine the remaining driven solution or
+its independent response. Choosing the regular solution as its own reference
+would force zero by definition. Neither shortcut settles the conjecture.
 
-Before finalizing a theorem, define the response combination actually identifiable in this aligned configuration; fix mass, spin, gauge, applied-field normalization, horizon and axis regularity, and the external matching conditions. Determine whether existing results already settle it. One aligned calculation need not distinguish every tensor coupling. A zero at one perturbative order is not an all-orders result.
+Pointwise amplitude analyticity does not justify a uniform horizon limit: mixed
+terms can diverge, and the curvature argument uses asymptotic dominance. The
+printed Ernst normalization and one static-potential sign fail direct checks;
+an arbitrary-holomorphic seed prescription fails the axisymmetric Laplace
+equation. These formula checks alone do not disprove the source paper's physical
+conclusion. Isolated asymptotically flat uniqueness does not transfer unchanged
+to prescribed external tides. A finite aligned calculation is not an all-orders,
+all-multipoles theorem.
 
-The intended outcome is either a vanishing proof with explicit assumptions or a regular, consistently matched counterexample. Do not assume vanishing in advance. Proof or disproof should be the centerpiece; symbolic and numerical calculations should support the argument.
+The separate [black-hole-recoil-dynamics repository](https://github.com/heyyymonth/black-hole-recoil-dynamics)
+studies kicked remnants, residence and encounters in stellar clusters. Its
+conditional calculations and inconclusive endpoint-accuracy tests remain valid
+parts of that record; they were not falsified by the change of research topic.
+The occupation identity is mathematical, while the diffusion-based first-response
+predictor is a separate approximation. Increased sampling did not resolve every
+refinement, rare-event, continuation or calibration uncertainty. Cluster evidence
+cannot establish an intrinsic Kerr theorem. Preserve that repository and its
+manuscript; do not substitute more cluster experiments or broad numerical sweeps
+for the present proof problem.
 
-## Work already completed
+## Repository and publication constraints
 
-- Correctly normalized stationary axisymmetric vacuum Ernst equation, checked against Schwarzschild and Kerr backgrounds.
-- Known static seed regularity argument, with finite-sum and convergence limitations.
-- Mixed second-order Ernst source equation. It has been derived, not solved for the proposed tidal Kerr problem.
-- Independent stationary orthonormal-frame curvature contraction, exact static mixed-quadrupole asymptotics, and a conditional rotating argument for a specified reflected vacuum family.
-- For fixed nonzero decaying Weyl-spherical quadrupole amplitude $d$ and finite applied amplitude $c$, the last argument gives $\lim_{r\to0^+}r^6\log\mathcal K=3d^2/2$. Here $r$ is dimensionless equatorial Weyl radius and $\mathcal K$ is dimensionless curvature. The rotating statement also assumes a fixed nonzero auxiliary Kerr-seed parameter and the declared local vacuum family.
+- Keep the public project name **Kerr Tidal Response Theory**, under the personal
+  account `heyyymonth`; the repository is already established. Preserve its Git
+  history and provenance. Avoid overwriting unrelated work.
+- Retain the author and contact above, the credit **Contributed by Hemanth.**, and
+  independent-researcher status. Do not invent an institutional affiliation or
+  incorporated organization. Keep assistance attribution accurate in
+  [AUTHORS.md](AUTHORS.md).
+- Original code and documentation use the MIT license. Preserve third-party
+  rights, source attribution and accurate citation metadata. A GitHub version is
+  neither a DOI nor a peer-reviewed publication.
+- Keep the structure focused on assumptions, derivations, meaningful checks,
+  reproducible results and claims tied to evidence. Validate before committing
+  and publishing. Never fill missing results, alter evidence to force agreement,
+  or describe unrun calculations as complete.
+- Preserve portable repository links. Pin cross-project historical references
+  where appropriate; avoid relying on sibling paths for public documentation.
+- The eventual manuscript preference is two-column APS/PRD REVTeX, with no
+  watermark, standard academic typography and citations. Titles and abstracts
+  must reflect supported results. Avoid experiment IDs as prose labels,
+  recursive self-citations, promotional language, artificial 90-day plans and
+  invented discoveries. Keep tooling details in repository documentation.
+  Compile and visually inspect any manuscript; maintain source, PDF and source
+  archive consistently when publishing. Do not modify the cluster manuscript to
+  report this separate investigation or assert a new theorem prematurely.
+- The user has requested natural, concise research prose and verifiable
+  mathematics. Preserve substantive assumptions and limitations while removing
+  repetitive progress language. Teach the distinction between applied field,
+  changed geometry, homogeneous freedom and independent response.
 
-The saved records report 32 baseline checks and 18 curvature checks, with 16 vacuum Ricci components checked. Script hashes matched the saved records when this handoff was prepared. Dependencies are pinned in `requirements.txt`. Re-run the existing checks when establishing the new repository; do not treat this handoff as a fresh execution record.
-
-The curvature result reconstructs an existing leading logarithmic obstruction. It does not reproduce the full published prefactor, prove global nakedness, establish completeness of the solution family, or compute a physically matched Love coefficient. The static and rotating branches have different subleading behavior. No uniform zero-tide, zero-spin, or extremal limit has been proved.
-
-## The logical gap we are investigating
-
-The nonlinear equation has the schematic form $\mathcal L_0\mathcal E_{AB}=S[\mathcal E_A,\mathcal E_B]$. The applied fields generate a source. Excluding a singular homogeneous seed does not determine the regular driven solution or its independent response after matching.
-
-Matching must distinguish the contribution fixed by the external field and background parameters from an additional response attributable to the black hole. A nonzero decaying coordinate coefficient alone is not a counterexample. A zero independent response coefficient does not mean that the horizon or spacetime has no tidal deformation.
-
-## Earlier experimentation and decisions to retain
-
-The original work studied kicked merger remnants moving through stellar clusters: retention, return, residence, exposure, and access to possible companions. Idealized Plummer controls developed into observationally informed, conditional models for 47 Tuc, NGC 1851, NGC 3201, Omega Centauri, M4, and NGC 6397. The current repository records executed local scattering, collisionless, matched encounter/diffusion, response, precision, independent retest, and application calculations.
-
-Their endpoint prediction accuracy, refinement, continuation bounds, and physical calibration remain unresolved in the documented tests. More precise sampling did not settle every uncertainty. This is not a falsified cluster hypothesis. Older notes describing the encounter implementation as wholly unfinished are superseded by the current repository.
-
-The occupation identity is mathematical; the separately tested approximation replaces a jump-process expectation with a diffusion-based first-response predictor. Neither this identity nor the cluster experiments establishes an intrinsic Kerr tidal theorem. The shift to Kerr reflects the user's preference for proof-centered theoretical physics; it does not invalidate the cluster work.
-
-Other boundaries:
-
-- Existing Schwarzschild and quadrupolar Kerr results are foundations, not discoveries to rebrand.
-- The published Gounis–Kehagias–Riotto paper already discusses simultaneous applied and decaying quadrupoles; arXiv v1 does not. Use the published version.
-- Pointwise analyticity in tidal amplitudes does not justify a uniform horizon limit. Mixed terms can diverge; the reconstructed argument uses asymptotic dominance.
-- A printed Ernst normalization and a static-potential sign fail direct checks; an arbitrary-holomorphic seed shortcut fails the axisymmetric Laplace equation. These findings do not by themselves disprove the paper's physical conclusion.
-- Isolated asymptotically flat black-hole uniqueness cannot simply be imported into a problem with external tidal boundary conditions.
-
-## Literature to verify and extend
-
-Exact source links, version details, and published-PDF hash are in README. Start with:
-
-- Gounis, Kehagias and Riotto, JCAP 03 (2025) 002, DOI `10.1088/1475-7516/2025/03/002`: published quadrupolar Kerr argument.
-- Combaluzier-Szteinsznaider et al., JHEP 03 (2025) 124, and Iteanu et al., JHEP 02 (2025) 174: existing nonlinear Schwarzschild results.
-- Rodríguez, Santoni and Solomon, arXiv:2604.08653v1, especially §§2.2.4 and 6.3.2: invited-review preprint identifying the broader all-multipole Kerr/matching gap. Do not label it a verified journal publication or an exhaustive novelty audit.
-- Gralla, Class. Quantum Grav. 35 (2018) 085002, DOI `10.1088/1361-6382/aab186`: why the relativistic response definition needs care. Do not transfer historical status claims into the present without checking them.
-
-Check current primary literature before asserting that the selected mixed sector remains open. No citation-count or breakthrough claim has been established.
-
-## Repository, authorship, and publication conventions
-
-- Preferred repository name: `kerr-tidal-response`, under personal GitHub account `heyyymonth`, public. Check for an existing destination and avoid overwriting unrelated work. Use the existing local working files as the foundation.
-- Author: **Venkata Hemanth Athota**. Public research contact: **bharadwaj.hemanth.002@gmail.com**. README contributor credit: **Contributed by Hemanth.** Independent researcher; do not invent an institutional affiliation or incorporated organization.
-- MIT license for original code and documentation; preserve third-party rights. Add accurate author and citation metadata. GitHub versions are not DOIs or peer-reviewed publications.
-- Keep the structure lean: problem and assumptions, derivations, meaningful symbolic checks, results with provenance, primary references, and a claim-to-evidence record. Use pinned dependencies and appropriate CI. Learn from the earlier repository's practices without copying its extensive cluster machinery.
-- Initial commit/push should contain only reviewed, reproducible working material with its true evidence status. A clean dependency install and successful checks precede publication. Do not fill missing results, modify evidence to force agreement, or describe unrun calculations as completed.
-- Retain the research-history context in a clearly labeled document. Preserve portable links if files are organized into subdirectories. Do not make continuity depend only on absolute paths outside the new repository.
-- Portability detail: `research-context.md` currently links to the sibling cluster checkout with `../black-hole-recoil-dynamics/...`. Those links work locally but will not work in a separate GitHub repository. Convert public-facing cross-project links to verified GitHub URLs, preferably pinned to the referenced revision; keep local access paths in this handoff.
-- The preferred eventual manuscript format is two-column APS/PRD REVTeX, no watermark, standard academic typography and citations. The title and abstract must reflect supported work. No experiment IDs as prose labels, recursive self-citations, promotional language, artificial 90-day plans, or invented discoveries. Keep tooling/dependency details in repository documentation. Compile and visually check any later manuscript; maintain source, PDF, and source archive consistently when publishing them.
-- Do not change the existing cluster manuscript to report this separate investigation. Begin with honest analytical notes; no manuscript asserting a new theorem is justified yet.
-
-## First actions in the new chat
-
-Read the context and current files; summarize the candidate conjecture, established reconstruction, and unresolved matching problem. Establish the separate repository with the conventions above, reproduce the existing checks, preserve provenance, and push the validated foundation using the available authenticated account. Report any genuine access blocker without guessing credentials.
-
-Then continue the learning discussion one concept at a time. The last lesson distinguished applied tide, changed geometry, and independent response, using the linear relation $Q=-\lambda\mathcal E$ as a teaching example. The next explanation should connect regularity to the driven solution and explain matching before attempting the proposed calculation. Do not launch broad numerical sweeps or substitute additional cluster experiments for this proof problem.
+The local checkout is
+`/Users/sravanbharadwaj/.codex/.chatgpt-projects/g-p-6a0133858c1081919cca37ecfc2582fa/research/kerr-tidal-response`.
+The cluster checkout is its sibling `black-hole-recoil-dynamics`. Files under the
+parent project's `sources/` are read-only synced references: do not edit, rename,
+move or delete them. If a future environment lacks the required material, report
+that access gap rather than claiming a reproduction or guessing credentials.

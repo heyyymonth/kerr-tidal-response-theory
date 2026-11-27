@@ -2,30 +2,20 @@
 
 Venkata Hemanth Athota · Learning and proof-obligation note · 13 November 2026
 
-This note explains the next step. It does not solve the mixed Kerr problem.
-The established calculations and their limits are in [CLAIMS.md](../CLAIMS.md).
+Horizon regularity constrains the total geometry; matching defines a response
+relative to an independently specified reference. This note explains that
+distinction for interacting Kerr tides.
 
-**24 November continuation:** [Radial response convention](radial-response.md)
-now defines a mathematical connection coefficient using only the forced source
-for its subtraction. Its spin-squared value is nonzero, while an alternative
-subtraction changes it. This conditional result is distinct from the physical
-matching problem explained below.
-
-**23 November continuation:** [Mixed construction](mixed-construction.md) now
-solves the driven mathematical problem for the chosen linear fields through
-spin squared. It exhibits a regular nonzero interaction and nonzero coordinate
-tails, with a proof of uniqueness for complete declared data. The distinction
-between forced deformation and an independently defined response remains.
-
-**22 November continuation:** [Linear construction](linear-construction.md)
-now implements a mathematical regularity problem for two declared driver
-families. The original pure-electric matching problem below is a distinct
-later interpretation task, not a condition for that restricted construction lemma.
-
-**20 November continuation:** [Response definition](response-definition.md)
-now classifies the declared algebraic sector, fixes its aligned normalization,
-and checks harmonic-source calibration. The full EFT reduction and physical
-matching described below remain necessary.
+The [linear](linear-construction.md) and [mixed](mixed-construction.md) notes
+construct regular fields through spin squared for declared mathematical boundary
+data, with uniqueness in a fixed-gauge finite-mode class. The mixed field and
+its coordinate tails are nonzero. The [radial note](radial-response.md) extracts
+a source-subtracted connection coefficient whose value changes with the
+subtraction convention. The [response definition](response-definition.md)
+classifies the algebraic electric sector, fixes its aligned normalization and
+checks harmonic-source calibration. Converting the constructed fields to those
+pure-electric data, completing the EFT reduction and performing physical
+matching remain open. [CLAIMS.md](../CLAIMS.md) links each result to its evidence.
 
 ## 1. State the candidate conjecture
 
@@ -69,8 +59,9 @@ for a specified reflected family and fixed nonzero decaying seed. It does not
 locate every possible global event horizon or prove nakedness. Its local frame
 uses $f>0$; that restriction is not a condition on the entire physical Kerr
 exterior. The stationary limit where $g_{tt}=0$ and the event horizon are different
-surfaces in rotating Kerr. A future boundary construction must handle the
-ergoregion and demonstrate regularity in suitable coordinates or frames.
+surfaces in rotating Kerr. A regular boundary construction must handle the
+ergoregion and establish smoothness in suitable coordinates or frames. The
+[linear construction](linear-construction.md) does this for its chosen family.
 
 Axis regularity is a separate condition: one must also exclude conical defects
 on the relevant axis segments, with a consistent azimuthal period.
@@ -98,8 +89,8 @@ The particular solution accounts for the forcing. Homogeneous solutions are the
 freedom left before imposing all boundary conditions and parameter conventions.
 Regularity constrains the **total** field. A particular solution may already be
 regular, or its singular terms may require cancellation by homogeneous terms.
-It is therefore unsafe to delete a named homogeneous basis function before
-examining the total solution.
+Removing a homogeneous basis function before examining the total solution
+can remove a cancellation needed for regularity.
 
 Even the particular/homogeneous split is not unique. For any homogeneous $h$,
 
@@ -183,10 +174,10 @@ needed for the two expansions to agree. In schematic form, in a fixed convention
 
 The $C_A$ are fixed by this comparison; their numerical values require a declared
 operator basis and normalization. A coordinate change may reshuffle metric
-coefficients while leaving consistently matched predictions unchanged. Do not
-define the reference field as the full Kerr answer and then claim that the
-resulting zero proves the conjecture: the reference contribution must be
-independently specified from the established couplings.
+coefficients while leaving consistently matched predictions unchanged. The
+reference contribution must be independently specified from the established
+couplings; using the full Kerr answer as its own reference would force a zero
+by definition.
 
 This distinction is motivated by [Gralla's definition analysis](https://arxiv.org/html/1710.11096v3)
 and implemented in the nonlinear Schwarzschild calculations of
@@ -194,12 +185,12 @@ and implemented in the nonlinear Schwarzschild calculations of
 and [Iteanu et al.](https://doi.org/10.1007/JHEP02(2025)174).
 Their results do not supply the missing rotating calculation here.
 
-## 6. The next proof obligation, before solving the proposed channel
+## 6. Remaining matching requirements
 
 | Required ingredient | What must be established | Current status |
 |---|---|---|
-| Response definition | Specify the spin-dependent tidal operator basis and its independent structures before imposing alignment; identify the combination probed by the aligned mass quadrupole. | Three algebraic scalars and their aligned combination derived in the continuation; full EFT reduction unresolved. No coefficient value assigned. |
-| External data and parameters | Define $\eta_2,\eta_4$, mass/spin labels and their perturbative shifts, time and azimuthal normalization, and which other applied moments vanish. | Mathematical seed and boundary data now specified; physical calibration remains open. |
+| Response definition | Specify the spin-dependent tidal operator basis and its independent structures before imposing alignment; identify the combination probed by the aligned mass quadrupole. | Three algebraic scalars and their aligned combination derived in [the response definition](response-definition.md); full EFT reduction unresolved. No coefficient value assigned. |
+| External data and parameters | Define $\eta_2,\eta_4$, mass/spin labels and their perturbative shifts, time and azimuthal normalization, and which other applied moments vanish. | Mathematical seed and boundary data specified; physical calibration remains open. |
 | Boundary conditions | Give regular horizon/axis conditions for the full reconstructed metric, including gauge and parameter modes. | Constructed for the declared mathematical family in [the mixed note](mixed-construction.md); not yet calibrated to pure-electric physical data. |
 | Driven solution | Obtain both linear tidal solutions and all lower spin orders needed by the mixed source. Solve the real-linear Ernst system. | Both linear fields and their driven mixed solution constructed through spin squared for the declared data. |
 | Matching | Compute the reference EFT contribution, map fields/gauges, and extract the identifiable response combination. | Not performed. |
@@ -217,8 +208,8 @@ equation is then
 
 Thus the lower spin orders cannot simply be skipped. Coordinate dependence of
 the prolate scale must also be accounted for when defining this expansion. This
-recursion has now been executed for the mathematical seed family, as recorded
-in [the mixed construction](mixed-construction.md). The [radial note](radial-response.md)
-now evaluates one explicitly normalized mathematical connection coefficient.
-A preferred invariant normalization remains unresolved, with physical matching
-a later task. A consistently defined nonzero result is as admissible as a vanishing proof.
+recursion is implemented for the mathematical seed family in
+[the mixed construction](mixed-construction.md). The [radial note](radial-response.md)
+evaluates one explicitly normalized connection coefficient. A preferred
+invariant normalization and physical matching remain open. A consistently
+defined nonzero result is as admissible as a vanishing proof.
