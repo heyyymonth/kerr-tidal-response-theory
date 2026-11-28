@@ -6,14 +6,14 @@ The source is stated independently of the proposed solution.
 
 The statements use
 
-$$
+```math
 p(x)=x^2-1,\qquad P_2(x)=\frac{3x^2-1}{2},
-$$
+```
 
-$$
+```math
 L_2R=pR''+2xR'-6R,\qquad
 C[R]=p(P_2R'-3xR).
-$$
+```
 
 The rational functions `solution2`, `source2`, and `primitive2` are the recorded
 $R_2,F_2,J_2$ from [`results/radial-response.json`](../results/radial-response.json),

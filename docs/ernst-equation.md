@@ -17,46 +17,46 @@ regularity are separate from specifying the outer data and a response convention
 
 In cylindrical Weyl coordinates $(\rho,z)$, introduce the complex Ernst potential
 
-$$
+```math
 \mathcal E=f+i\varpi,
 \qquad
 \Delta_{\rm ax}=\partial_\rho^2+\rho^{-1}\partial_\rho+\partial_z^2.
-$$
+```
 
 Here $f$ is the metric potential and $\varpi$ is the twist potential. The correctly normalized equation is
 
-$$
+```math
 \mathrm{Re}(\mathcal E)\Delta_{\rm ax}\mathcal E
 =\nabla\mathcal E\cdot\nabla\mathcal E.
-$$
+```
 
 The gradient product is bilinear, with no complex conjugate. Equivalently,
 
-$$
+```math
 (\mathcal E+\overline{\mathcal E})\Delta_{\rm ax}\mathcal E
 =2\nabla\mathcal E\cdot\nabla\mathcal E.
-$$
+```
 
 Splitting real and imaginary parts gives
 
-$$
+```math
 f\Delta_{\rm ax}f=(\nabla f)^2-(\nabla\varpi)^2,
 \qquad
 f\Delta_{\rm ax}\varpi=2\nabla f\cdot\nabla\varpi.
-$$
+```
 
 These equations provide the starting convention independently of the printed complex equation in [Gounis et al.](https://doi.org/10.1088/1475-7516/2025/03/002).
 
 For prolate coordinates with scale $\sigma=\sqrt{M^2-a^2}$, define
 
-$$
+```math
 D h=\partial_x[(x^2-1)\partial_xh]
 +\partial_y[(1-y^2)\partial_yh],
-$$
+```
 
-$$
+```math
 B(g,h)=(x^2-1)g_xh_x+(1-y^2)g_yh_y.
-$$
+```
 
 The common factor $[\sigma^2(x^2-y^2)]^{-1}$ cancels from the Ernst equation, leaving $\mathrm{Re}(\mathcal E)D\mathcal E=B(\mathcal E,\mathcal E)$.
 
@@ -69,10 +69,10 @@ Two independent exact-background checks fix the normalization:
 
 Published Eq. (2.11), p.4, lacks the factor 2 above. Our Schwarzschild substitution gives
 
-$$
+```math
 2\mathcal E_S D\mathcal E_S-B(\mathcal E_S,\mathcal E_S)
 =\frac{4(x-1)}{(x+1)^3}\ne0\quad (x>1).
-$$
+```
 
 This is a reproducible normalization inconsistency, apparently typographical. It does not establish that the paper's independently constructed distorted metric or tidal conclusion is false.
 
@@ -80,31 +80,31 @@ This is a reproducible normalization inconsistency, apparently typographical. It
 
 For a real Ernst potential $\mathcal E=e^{2u}$, direct substitution yields
 
-$$
+```math
 \mathcal E D\mathcal E-B(\mathcal E,\mathcal E)
 =2\mathcal E^2 D u.
-$$
+```
 
 Thus the static equation reduces to $D u=0$. Subtracting the Schwarzschild background potential leaves a harmonic distortion $\psi$. In a finite separated expansion,
 
-$$
+```math
 \psi(x,y)=\sum_\ell
 \big[A_\ell P_\ell(x)+B_\ell Q_\ell(x)\big]P_\ell(y).
-$$
+```
 
 Both radial branches obey
 
-$$
+```math
 \frac{d}{dx}\left[(x^2-1)\frac{dU_\ell}{dx}\right]
 -\ell(\ell+1)U_\ell=0.
-$$
+```
 
 For nonnegative integer $\ell$, $P_\ell$ is a polynomial with $P_\ell(1)=1$. The second solution has
 
-$$
+```math
 Q_\ell(x)=\tfrac12P_\ell(x)\log\frac{x+1}{x-1}
 -W_{\ell-1}(x),
-$$
+```
 
 where $W_{\ell-1}$ is polynomial (zero for $\ell=0$). It diverges logarithmically as $x\to1^+$ and decays as $x^{-\ell-1}$ at large $x$.
 
@@ -116,11 +116,11 @@ This recovers a known seed-level regularity argument. It does **not** identify e
 
 Equation (6.7) of [Gounis et al.](https://doi.org/10.1088/1475-7516/2025/03/002), printed p.15, describes arbitrary real parts of holomorphic functions of $\rho+iz$ as seed solutions. Take $\psi=\mathrm{Re}(\rho+iz)^2=\rho^2-z^2$. Then
 
-$$
+```math
 (\partial_\rho^2+\partial_z^2)\psi=0,
 \qquad
 \Delta_{\rm ax}\psi=2.
-$$
+```
 
 It is harmonic for the flat two-dimensional operator, but not for the three-dimensional axisymmetric operator required here. This disproves that shortcut as stated; it does not disprove the separate Legendre ladder identities or the physical Kerr response result. Such transformations cannot be assumed to preserve the axisymmetric equation.
 
@@ -128,36 +128,36 @@ It is harmonic for the flat two-dimensional operator, but not for the three-dime
 
 Let $\mathcal E_0$ be the Kerr background, $f_0=\mathrm{Re}(\mathcal E_0)$, and define the real-linear operator
 
-$$
+```math
 \mathcal L_0h=f_0Dh+\mathrm{Re}(h)D\mathcal E_0
 -2B(\mathcal E_0,h).
-$$
+```
 
 For $\mathcal E=\mathcal E_0+\epsilon\mathcal E_1+\epsilon^2\mathcal E_2+\cdots$, with no factorial in the second-order term,
 
-$$
+```math
 \mathcal L_0\mathcal E_1=0,
 \qquad
 \mathcal L_0\mathcal E_2
 =B(\mathcal E_1,\mathcal E_1)
 -\mathrm{Re}(\mathcal E_1)D\mathcal E_1.
-$$
+```
 
 For two independent applied fields, use
 
-$$
+```math
 \mathcal E=\mathcal E_0+\alpha\mathcal E_A+\beta\mathcal E_B
 +\alpha\beta\mathcal E_{AB}+\cdots.
-$$
+```
 
 The mixed equation is
 
-$$
+```math
 \mathcal L_0\mathcal E_{AB}
 =2B(\mathcal E_A,\mathcal E_B)
 -\mathrm{Re}(\mathcal E_A)D\mathcal E_B
 -\mathrm{Re}(\mathcal E_B)D\mathcal E_A.
-$$
+```
 
 This identity was checked for arbitrary component functions, not fitted to particular solutions. The second-order equation is driven. Excluding a singular homogeneous branch is insufficient to determine whether the regular, driven solution contains an independent conservative response after matching.
 

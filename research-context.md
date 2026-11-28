@@ -50,9 +50,9 @@ the independently matched conjecture.
 For the curvature calculation, fixed nonzero decaying Weyl-spherical quadrupole
 amplitude $d$ and finite applied amplitude $c$ give
 
-$$
+```math
 \lim_{r\to0^+}r^6\log\mathcal K=\frac32d^2>0.
-$$
+```
 
 Here $r$ is dimensionless equatorial Weyl radius and $\mathcal K$ is dimensionless
 curvature. The rotating argument also fixes a nonzero Kerr-seed parameter and
@@ -70,9 +70,9 @@ different scopes; no complete formal verification of the Kerr research is claime
 
 The mixed equation has the form
 
-$$
+```math
 \mathcal L_0\mathcal E_{AB}=S[\mathcal E_A,\mathcal E_B].
-$$
+```
 
 Once the two linear fields are fixed, their interaction fixes the source. A
 particular solution plus homogeneous terms describes the remaining boundary
