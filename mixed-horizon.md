@@ -191,9 +191,9 @@ there are two distinct limits:
 | Fixed amplitude | Auxiliary limit | Leading $U$ | Leading $H$ |
 |---|---|---|---|
 | $d<0$ | $k\to0$ | $\psi+U_S$ | $2k$ |
-| $d>0$ | $|k|\to\infty$ | $\psi-U_S$ | $-8/(r^2k)$ |
+| $d>0$ | $\lvert k\rvert\to\infty$ | $\psi-U_S$ | $-8/(r^2k)$ |
 
-In both cases $T/S>0$ sufficiently close to $r=0$. Corrections to the displayed $U$ and to its first two radial derivatives are exponentially small times powers of $r$. The same is true of $H$ and its first two radial derivatives: differentiating $k$ only adds algebraic factors because $k_r/k=-2\psi_r/x$. In the large-$k$ branch this follows by expanding the rational expressions in $1/k$; factors $1/(x-1)$ contribute only powers of $1/r$.
+In both cases $T/S>0$ sufficiently close to $r=0$. Corrections to the displayed $U$ and to its first two radial derivatives are exponentially small times powers of $r$. The same is true of $H$ and its first two radial derivatives: differentiating $k$ only adds algebraic factors because $k_r/k=-2\psi_r/x$. In the branch with large $\lvert k\rvert$ this follows by expanding the rational expressions in $1/k$; factors $1/(x-1)$ contribute only powers of $1/r$.
 
 Consequently
 
